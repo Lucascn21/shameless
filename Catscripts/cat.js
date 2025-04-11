@@ -23,9 +23,12 @@ cat.addEventListener("click", () => {
   })`;
   cat.style.zIndex = 1000;
   cat.style.transition = "transform 0.5s ease-in-out, left 0.5s ease-in-out";
+<<<<<<< HEAD
 
   // Reproducir sonido
   playSound();
+=======
+>>>>>>> fbebda3d0ca1dfa247f0f41dc7e49c6f7bf37b68
 
   // Crear un "objeto traído"
   const item = document.createElement("div");
@@ -49,6 +52,7 @@ setInterval(() => {
   cat.style.transform = `rotate(${Math.random() * 360}deg) scale(${
     0.5 + Math.random() * 1.5
   })`;
+  cat.style.zIndex = 1000; // Asegúrate de que el gato esté por encima de otros elementos;
 
   const item = document.createElement("div");
   item.className = "item loco";
