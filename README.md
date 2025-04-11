@@ -61,7 +61,7 @@ Y de paso... **salvar a todos los gatitos del HTML mal hecho** 🐾
 
 ## 📸 Captura de pantalla
 
-![Preview del sitio](./screenshot.jpg)
+![Preview del sitio](./Catcosas/preview.png)
 
 ---
 
