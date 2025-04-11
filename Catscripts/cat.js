@@ -93,4 +93,4 @@ function moveAllDivsRandomly() {
 }
 
 // Mueve todos los divs cada 2 segundos
-setInterval(moveAllDivsRandomly, 2000);
+setInterval(moveAllDivsRandomly, 200);
