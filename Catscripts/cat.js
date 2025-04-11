@@ -45,7 +45,7 @@ setInterval(() => {
 }, 2000);
 
 // Sonido de fondo (ajusta la ruta de tu archivo)
-const backgroundSound = new Audio("../Catcosas/sonido.mp3");
+const backgroundSound = new Audio("./Catcosas/sonido.mp3");
 backgroundSound.loop = true;
 backgroundSound.play();
 
