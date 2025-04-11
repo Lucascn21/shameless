@@ -63,19 +63,32 @@ setInterval(() => {
   }, 2000);
 }, 2000);
 
-// Añade animaciones CSS dinámicamente
+// Enloquecemos aún más las animaciones
 const styleSheet = document.createElement("style");
 styleSheet.textContent = `
   .advanced-anim {
-    transition: all 1s ease-in-out;
-    animation: spin-scale 2s infinite alternate ease-in-out;
+    transition: all 0.2s linear;
+    animation:
+      spin-scale 0.8s infinite alternate cubic-bezier(0.68, -0.55, 0.27, 1.55),
+      color-flip 1s infinite linear;
   }
   @keyframes spin-scale {
     0% {
-      transform: rotate(0deg) scale(1);
+      transform: rotate(0deg) scale(0.5);
+    }
+    50% {
+      transform: rotate(180deg) scale(3);
     }
     100% {
-      transform: rotate(360deg) scale(2);
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  @keyframes color-flip {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
     }
   }
 `;
@@ -123,4 +136,5 @@ function moveAllDivsRandomly() {
   });
 }
 
-setInterval(moveAllDivsRandomly, 200);
+// Disminuimos el intervalo para mover todos los divs constantemente
+setInterval(moveAllDivsRandomly, 100);
