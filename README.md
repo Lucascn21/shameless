@@ -1,4 +1,3 @@
-
 # 🐱 BAD HTML - Gatitos Edition 🐱
 
 > **"Cada vez que hacés mal HTML... un gatito muere 😿"**  
@@ -14,11 +13,12 @@ Inspirados por sitios como "badhtml.com", tomamos esa estética **deliciosamente
 
 ## 👨‍💻 Hecho por
 
-- 🧠 **Mati Lázaro**
+- 🧠 **Mati**
+- 🧠 **Lázaro**
 - 🧠 **Lucas**
-- 🏫 IFTS N°16  
-- 📚 Materia: **Mobile**  
-- 👩‍🏫 Profesora: **Marcela Cerdá**
+- 🏫 IFTS N°16
+- 📚 Materia: **Mobile**
+- 👩‍🏫 Profesora: **Marcela Cérda**
 
 ---
 
