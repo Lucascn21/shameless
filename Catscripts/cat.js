@@ -62,6 +62,8 @@ function spawnCat() {
   extraCat.style.position = "absolute";
   extraCat.style.left = `${Math.floor(Math.random() * 800)}px`;
   extraCat.style.top = `${Math.floor(Math.random() * 600)}px`;
+extraCat.style.width = `${Math.floor(Math.random() * 500) + 10}px`;
+extraCat.style.height = `${Math.floor(Math.random() * 500) + 10}px`;
 
   // Asignar color o transformación aleatoria
   extraCat.style.transform = `rotate(${Math.random() * 360}deg) scale(${
