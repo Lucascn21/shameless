@@ -63,6 +63,24 @@ setInterval(() => {
   }, 2000);
 }, 2000);
 
+// Añade animaciones CSS dinámicamente
+const styleSheet = document.createElement("style");
+styleSheet.textContent = `
+  .advanced-anim {
+    transition: all 1s ease-in-out;
+    animation: spin-scale 2s infinite alternate ease-in-out;
+  }
+  @keyframes spin-scale {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      transform: rotate(360deg) scale(2);
+    }
+  }
+`;
+document.head.appendChild(styleSheet);
+
 // Crear y posicionar más gatos
 for (let i = 0; i < 100; i++) {
   spawnCat();
@@ -70,7 +88,7 @@ for (let i = 0; i < 100; i++) {
 
 function spawnCat() {
   const extraCat = document.createElement("div");
-  extraCat.className = "cat loco";
+  extraCat.className = "cat loco advanced-anim";
   extraCat.style.position = "absolute";
   extraCat.style.left = `${Math.floor(Math.random() * 800)}px`;
   extraCat.style.top = `${Math.floor(Math.random() * 600)}px`;
@@ -95,6 +113,7 @@ function spawnCat() {
 function moveAllDivsRandomly() {
   const allDivs = document.querySelectorAll("div");
   allDivs.forEach((elem) => {
+    elem.classList.add("advanced-anim");
     elem.style.position = "absolute";
     elem.style.left = `${Math.floor(Math.random() * 800)}px`;
     elem.style.top = `${Math.floor(Math.random() * 600)}px`;
