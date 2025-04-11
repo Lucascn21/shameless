@@ -39,6 +39,32 @@ setInterval(() => {
   itemsContainer.appendChild(item);
 
   setTimeout(() => {
+    backgroundSound.play();
     item.remove();
   }, 2000);
 }, 2000);
+
+// Sonido de fondo (ajusta la ruta de tu archivo)
+const backgroundSound = new Audio("../Catcosas/sonido.mp3");
+backgroundSound.loop = true;
+backgroundSound.play();
+
+// Crear y posicionar 5 gatos adicionales
+for (let i = 0; i < 50; i++) {
+  spawnCat();
+}
+
+function spawnCat() {
+  const extraCat = document.createElement("div");
+  extraCat.className = "cat loco";
+  extraCat.style.position = "absolute";
+  extraCat.style.left = `${Math.floor(Math.random() * 600)}px`;
+  extraCat.style.top = `${Math.floor(Math.random() * 400)}px`;
+
+  extraCat.addEventListener("click", () => {
+    spawnCat();
+    backgroundSound.play();
+  });
+
+  document.body.appendChild(extraCat);
+}
