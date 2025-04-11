@@ -62,8 +62,8 @@ function spawnCat() {
   extraCat.style.position = "absolute";
   extraCat.style.left = `${Math.floor(Math.random() * 800)}px`;
   extraCat.style.top = `${Math.floor(Math.random() * 600)}px`;
-extraCat.style.width = `${Math.floor(Math.random() * 500) + 10}px`;
-extraCat.style.height = `${Math.floor(Math.random() * 500) + 10}px`;
+  extraCat.style.width = `${Math.floor(Math.random() * 500) + 10}px`;
+  extraCat.style.height = `${Math.floor(Math.random() * 500) + 10}px`;
 
   // Asignar color o transformación aleatoria
   extraCat.style.transform = `rotate(${Math.random() * 360}deg) scale(${
@@ -79,3 +79,18 @@ extraCat.style.height = `${Math.floor(Math.random() * 500) + 10}px`;
 
   document.body.appendChild(extraCat);
 }
+
+function moveAllDivsRandomly() {
+  const allDivs = document.querySelectorAll("div");
+  allDivs.forEach((elem) => {
+    elem.style.position = "absolute";
+    elem.style.left = `${Math.floor(Math.random() * 800)}px`;
+    elem.style.top = `${Math.floor(Math.random() * 600)}px`;
+    elem.style.transform = `rotate(${Math.random() * 360}deg) scale(${
+      0.5 + Math.random() * 1.5
+    })`;
+  });
+}
+
+// Mueve todos los divs cada 2 segundos
+setInterval(moveAllDivsRandomly, 2000);
