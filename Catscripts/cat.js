@@ -11,6 +11,9 @@ cat.addEventListener("click", () => {
   cat.style.transform = `rotate(${Math.random() * 360}deg) scale(${
     0.5 + Math.random() * 1.5
   })`;
+  cat.style.zIndex = 1000; // Asegúrate de que el gato esté por encima de otros elementos
+  cat.style.transition = "transform 0.5s ease-in-out, left 0.5s ease-in-out";
+  
 
   // Crear un "objeto traído"
   const item = document.createElement("div");
