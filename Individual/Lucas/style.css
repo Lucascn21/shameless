@@ -1,3 +1,51 @@
+/* Variables globales */
+:root {
+  --color-primary: #0d1117; /* Fondo principal oscuro */
+  --color-secondary: #161b22; /* Fondo secundario */
+  --color-accent: #007bff; /* Azul brillante para botones */
+  --color-accent-hover: #0056b3; /* Azul más oscuro para hover */
+  --color-background: #0d1117; /* Fondo principal */
+  --color-text: #ffffff; /* Texto blanco */
+  --color-footer: #161b22; /* Fondo del footer */
+  --color-nav-bg: #0d1117; /* Fondo del nav */
+  --color-nav-link: transparent; /* Fondo transparente para enlaces */
+  --color-nav-link-hover: #007bff; /* Azul brillante para hover en enlaces */
+
+  /* Tipografía */
+  --font-family: "Proxima Nova", sans-serif;
+  --font-size-base: 1rem; /* 16px */
+  --font-size-h1: clamp(
+    2.5rem,
+    5.5vw,
+    16rem
+  ); /* 40px, 5,5% del ancho de la vista, 256px*/
+  --font-size-h2: clamp(
+    1.8rem,
+    4vw,
+    3.5rem
+  ); /* 28px, 4% del ancho de la vista, 56px*/
+  --font-size-text: clamp(
+    1rem,
+    1.5vw,
+    1.5rem
+  ); /* 16px, 1.5% del ancho de la vista, 24px*/
+
+  /* Peso */
+  --font-weight-light: 300; /* Ligera */
+  --font-weight-normal: 400; /* Normal */
+  --font-weight-medium: 500; /* Media */
+  --font-weight-semibold: 600; /* Semipesada */
+  --font-weight-regular: 700; /* Regular */
+  --font-weight-bold: 800; /* Negrita */
+  --font-weight-black: 900; /* Negra */
+
+  /* Espaciado */
+  --spacing-small: 1rem; /* 16px */
+  --spacing-medium: 1.5rem; /* 24px */
+  --spacing-large: 5%;
+  --border-radius: 0.5rem; /* 8px */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +53,16 @@
 }
 
 body {
-  font-family: "Proxima Nova", sans-serif;
-  background-color: chocolate;
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text);
   height: 100svh;
   display: grid;
   grid-template-rows: auto auto 5%;
 }
 
 header {
-  background-color: rgba(255, 0, 0, 0.192);
+  background-color: rgba(13, 17, 23, 0.507);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -22,24 +71,22 @@ header {
   position: fixed;
 }
 
-h1,
-h2 {
+h1 {
+  font-size: var(--font-size-h1);
   line-height: 1.1;
 }
 
-h1 {
-  font-size: clamp(2.5rem, 5.5vw, 16rem);
-}
 h2 {
-  color: white;
-  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  color: var(--color-text);
+  font-size: var(--font-size-h2);
   text-align: center;
-  font-weight: 800;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
 }
 
 main {
   display: grid;
-  background-color: rgba(255, 238, 0, 0.192);
+  background-color: var(--color-secondary);
 }
 
 section {
@@ -47,37 +94,42 @@ section {
 }
 
 #hero {
-  background-color: rgba(0, 0, 70, 0.74);
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
   display: grid;
   align-content: center;
   justify-items: center;
-  padding: 5%;
-  gap: 5%;
+  padding: var(--spacing-large);
+  gap: var(--spacing-large);
 }
 
 #herobtn {
   display: inline-block;
-  background-color: rgb(0, 119, 255);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-accent);
+  color: var(--color-text);
   border: none;
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.3125rem;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--border-radius);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
+#herobtn:hover {
+  background-color: var(--color-accent-hover);
+}
+
 #herotext {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
-  font-weight: 400;
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-normal);
   line-height: 1.3;
   max-width: 68.75rem;
 }
 
 footer {
-  background-color: rgba(0, 255, 13, 0.192);
+  background-color: var(--color-footer);
+  color: var(--color-text);
 }
 
 nav {
@@ -93,7 +145,7 @@ nav > ul {
   height: 3.125rem;
   margin: 0;
   padding: 0;
-  background-color: brown;
+  background-color: var(--color-nav-bg);
 }
 
 nav ul li {
@@ -110,12 +162,11 @@ nav ul li a {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: white;
-  font-weight: bold;
-  background-color: rgba(165, 42, 42, 0.8);
+  color: var(--color-text);
+  background-color: var(--color-nav-link);
   transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: var(--color-nav-link-hover);
 }
