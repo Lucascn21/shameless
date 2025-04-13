@@ -45,6 +45,8 @@
   --spacing-large: 5%;
   --spacing-xlarge: 10%; /* 160px */
   --spacing-xxlarge: 15%; /* 240px */
+  --spacing-xxxlarge: 20%; /* 320px */
+  --spacing-xxxxlarge: 25%; /* 400px */
   --border-radius: 0.5rem; /* 8px */
 }
 
@@ -102,8 +104,8 @@ section {
   align-content: center;
   justify-items: center;
   padding: var(--spacing-large);
-  padding-top: var(--spacing-xxlarge);
-  gap: var(--spacing-large);
+  padding-top: var(--spacing-xxxxlarge);
+  gap: var(--spacing-xlarge);
 }
 
 #herobtn {
