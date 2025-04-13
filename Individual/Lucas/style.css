@@ -43,6 +43,8 @@
   --spacing-small: 1rem; /* 16px */
   --spacing-medium: 1.5rem; /* 24px */
   --spacing-large: 5%;
+  --spacing-xlarge: 10%; /* 160px */
+  --spacing-xxlarge: 15%; /* 240px */
   --border-radius: 0.5rem; /* 8px */
 }
 
@@ -100,6 +102,7 @@ section {
   align-content: center;
   justify-items: center;
   padding: var(--spacing-large);
+  padding-top: var(--spacing-xxlarge);
   gap: var(--spacing-large);
 }
 
