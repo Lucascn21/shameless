@@ -84,7 +84,6 @@ main {
 section {
   height: 100svh;
   padding: var(--spacing-large);
-  padding-top: var(--spacing-xxxxlarge);
   gap: var(--spacing-xlarge);
 }
 
@@ -94,6 +93,7 @@ section {
   display: grid;
   align-content: center;
   justify-items: center;
+  padding-top: var(--spacing-xxxxlarge);
 }
 
 #herobtn {
