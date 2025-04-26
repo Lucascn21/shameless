@@ -9,7 +9,7 @@
   <body>
     <header>
       <h1>Cat's Boutique</h1>
-      <nav>
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="./pages/products.html">Productos</a></li>
@@ -17,6 +17,22 @@
           <li><a href="./pages/contact.html">Contacto</a></li>
         </ul>
       </nav>
+      <button id="hamburger" aria-label="Abrir menú" aria-controls="menu-dialog">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <dialog id="menu-dialog">
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./pages/products.html">Productos</a></li>
+            <li><a href="./pages/about.html">Nosotros</a></li>
+            <li><a href="./pages/contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="close-dialog" aria-label="Cerrar menú">✕</button>
+      </dialog>
     </header>
     <main>
       <section id="hero">

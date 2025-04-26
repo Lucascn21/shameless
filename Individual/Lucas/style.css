@@ -61,6 +61,7 @@ header {
   justify-content: center;
   padding: 1%;
   position: fixed;
+  padding-bottom: 0px;
 }
 
 h1 {
@@ -138,10 +139,10 @@ nav > ul {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 3.125rem;
+/*   height: 3.125rem; */
   margin: 0;
   padding: 0;
-  background-color: var(--color-nav-bg);
+/*   background-color: var(--color-nav-bg); */
 }
 
 nav ul li {
@@ -177,4 +178,68 @@ nav ul li a:hover {
 #why-choose-us img {
   width: 50%;
   height: auto;
+}
+
+/* Hamburguesa oculta en desktop */
+#hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+#hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Dialog menú */
+#menu-dialog {
+  border: none;
+  background: var(--color-secondary);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  max-width: 90vw;
+  margin: auto;
+}
+#menu-dialog nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#menu-dialog nav ul li a {
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+#close-dialog {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive: mostrar hamburguesa y ocultar nav normal en mobile */
+@media (max-width: 768px) {
+  nav.main-nav {
+    display: none;
+  }
+  #hamburger {
+    display: flex;
+    position: absolute;
+    top: 1;
+    right: 1.5rem;
+  }
 }
