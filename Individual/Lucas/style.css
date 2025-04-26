@@ -79,12 +79,14 @@ h2 {
 main {
   display: grid;
   background-color: var(--color-secondary);
+  padding: var(--spacing-large);
+  text-align: center;
 }
 
 section {
-  height: 100svh;
-  padding: var(--spacing-large);
-  gap: var(--spacing-xlarge);
+  min-height: 100svh;
+  gap: var(--spacing-large);
+  justify-items: center;
 }
 
 #hero {
@@ -93,7 +95,6 @@ section {
   display: grid;
   align-content: center;
   justify-items: center;
-  padding-top: var(--spacing-xxxxlarge);
 }
 
 #herobtn {
@@ -123,6 +124,8 @@ section {
 footer {
   background-color: var(--color-footer);
   color: var(--color-text);
+  text-align: center;
+  padding: 1%;
 }
 
 nav {
@@ -166,7 +169,9 @@ nav ul li a:hover {
 
 #why-choose-us {
   display: grid;
-  grid-template-rows: 1fr 2fr 3fr;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #why-choose-us img {
