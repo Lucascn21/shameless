@@ -83,6 +83,9 @@ main {
 
 section {
   height: 100svh;
+  padding: var(--spacing-large);
+  padding-top: var(--spacing-xxxxlarge);
+  gap: var(--spacing-xlarge);
 }
 
 #hero {
@@ -91,9 +94,6 @@ section {
   display: grid;
   align-content: center;
   justify-items: center;
-  padding: var(--spacing-large);
-  padding-top: var(--spacing-xxxxlarge);
-  gap: var(--spacing-xlarge);
 }
 
 #herobtn {
@@ -113,7 +113,7 @@ section {
   background-color: var(--color-accent-hover);
 }
 
-#herotext {
+.hero-text {
   font-size: var(--font-size-text);
   font-weight: var(--font-weight-normal);
   line-height: 1.3;
@@ -162,4 +162,14 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: var(--color-nav-link-hover);
+}
+
+#why-choose-us {
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr;
+}
+
+#why-choose-us img {
+  width: 50%;
+  height: auto;
 }
