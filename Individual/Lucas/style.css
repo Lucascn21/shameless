@@ -1,53 +1,41 @@
 /* Variables globales */
 :root {
-  --color-primary: #0d1117; /* Fondo principal oscuro */
-  --color-secondary: #161b22; /* Fondo secundario */
-  --color-accent: #007bff; /* Azul brillante para botones */
-  --color-accent-hover: #0056b3; /* Azul más oscuro para hover */
-  --color-background: #0d1117; /* Fondo principal */
-  --color-text: #ffffff; /* Texto blanco */
-  --color-footer: #161b22; /* Fondo del footer */
-  --color-nav-bg: #0d1117; /* Fondo del nav */
-  --color-nav-link: transparent; /* Fondo transparente para enlaces */
-  --color-nav-link-hover: #007bff; /* Azul brillante para hover en enlaces */
+  --color-primary: #0d1117;
+  --color-secondary: #161b22;
+  --color-accent: #007bff;
+  --color-accent-hover: #0056b3;
+  --color-background: #0d1117;
+  --color-text: #ffffff;
+  --color-footer: #161b22;
+  --color-nav-bg: #0d1117;
+  --color-nav-link: transparent;
+  --color-nav-link-hover: #007bff;
 
   /* Tipografía */
   --font-family: "Proxima Nova", sans-serif;
-  --font-size-base: 1rem; /* 16px */
-  --font-size-h1: clamp(
-    2.5rem,
-    5.5vw,
-    16rem
-  ); /* 40px, 5,5% del ancho de la vista, 256px*/
-  --font-size-h2: clamp(
-    1.8rem,
-    4vw,
-    3.5rem
-  ); /* 28px, 4% del ancho de la vista, 56px*/
-  --font-size-text: clamp(
-    1rem,
-    1.5vw,
-    1.5rem
-  ); /* 16px, 1.5% del ancho de la vista, 24px*/
+  --font-size-base: 1rem;
+  --font-size-h1: clamp(2.5rem, 5.5vw, 16rem);
+  --font-size-h2: clamp(1.8rem, 4vw, 3.5rem);
+  --font-size-text: clamp(1rem, 1.5vw, 1.5rem);
 
   /* Peso */
-  --font-weight-light: 300; /* Ligera */
-  --font-weight-normal: 400; /* Normal */
-  --font-weight-medium: 500; /* Media */
-  --font-weight-semibold: 600; /* Semipesada */
-  --font-weight-regular: 700; /* Regular */
-  --font-weight-bold: 800; /* Negrita */
-  --font-weight-black: 900; /* Negra */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 700;
+  --font-weight-bold: 800;
+  --font-weight-black: 900;
 
   /* Espaciado */
-  --spacing-small: 1rem; /* 16px */
-  --spacing-medium: 1.5rem; /* 24px */
+  --spacing-small: 1rem;
+  --spacing-medium: 1.5rem;
   --spacing-large: 5%;
-  --spacing-xlarge: 10%; /* 160px */
-  --spacing-xxlarge: 15%; /* 240px */
-  --spacing-xxxlarge: 20%; /* 320px */
-  --spacing-xxxxlarge: 25%; /* 400px */
-  --border-radius: 0.5rem; /* 8px */
+  --spacing-xlarge: 10%;
+  --spacing-xxlarge: 15%;
+  --spacing-xxxlarge: 20%;
+  --spacing-xxxxlarge: 25%;
+  --border-radius: 0.5rem;
 }
 
 * {
