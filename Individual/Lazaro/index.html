@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!!!!¡¡¡ TIENDA DE CAFÉ !!!!¡¡¡</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Enlace a Google Fonts para fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Papyrus&display=swap" rel="stylesheet">
+    <style>
+      blink {
+        animation: blinker 0.8s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body bgcolor="#ff00ff" onload="alert('¡BIENVENIDO A NUESTRA INCREÍBLE PÁGINA DE CAFÉ!')"
+    onmousemove="document.getElementById('cursor-tracker').innerHTML = 'X: '+event.clientX+' Y: '+event.clientY">
+    <!-- Header -->
+    <header>
+      <div id="cursor-tracker"
+        style="position: absolute; top: 5px; left: 5px; color: lime; font-weight: bold; font-size: 14px;">X: 0 Y: 0
+      </div>
+      <marquee behavior="alternate" direction="right" scrollamount="12">¡¡¡¡ ☕ BIENVENIDO A NUESTRA TIENDA DE CAFÉ ☕
+        !!!!</marquee>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <blink>TIENDA DE CAFÉ</blink>
+          </a>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://media.giphy.com/media/Wsju5zAb5kcOfxJV9i/giphy.gif" width="100" height="100">
+          <img src="https://media.giphy.com/media/MEF1VadKbQBdmd8LCn/giphy.gif" width="100" height="100">
+          <img src="https://media.giphy.com/media/Wsju5zAb5kcOfxJV9i/giphy.gif" width="100" height="100">
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+      <marquee behavior="scroll" direction="left" scrollamount="5">¡NAVEGACIÓN SÚPER COOL! ⭐ ¡CLICK EN LOS ENLACES! ⭐
+        ¡OFERTAS ESPECIALES!</marquee>
+      <ul>
+        <li><a href="index.html"
+            style="background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);">⚡ Inicio
+            ⚡</a></li>
+        <li><a href="tienda.html"
+            style="background-image: url('https://media.giphy.com/media/bEBRt9CuTbQOI/giphy.gif'); background-size: cover;">☕
+            Nuestro Café ☕</a></li>
+        <li><a href="tutoriales.html">
+            <blink>🎓 Tutoriales 🎓</blink>
+          </a></li>
+        <li><a href="menu.html"><img src="https://media.giphy.com/media/RHOwKRZSx7QELwnTPy/giphy.gif" width="20"
+              height="20"> Nuestro Menú</a></li>
+        <li><a href="trabaja-en-tdc.html" style="text-decoration: underline wavy red;">💼 Trabajá con Nosotros 💼</a>
+        </li>
+        <li><a href="franquicias.html" style="font-family: 'Papyrus', fantasy;">💰 Franquicias 💰</a></li>
+        <li><a href="contacto.html" style="transform: rotate(5deg); display: inline-block;">📞 Contacto 📞</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div style="position: absolute; top: 20px; left: 20px; right: 20px;">
+        <marquee behavior="alternate" scrollamount="15" direction="down" height="300" style="border: 5px dashed lime;">
+          <marquee behavior="alternate" scrollamount="10">🔥🔥🔥 ¡¡¡LOS MEJORES CAFÉS DE LA INTERNET!!! 🔥🔥🔥</marquee>
+        </marquee>
+      </div>
+      <div class="hero-content">
+        <h1 style="font-family: 'Comic Sans MS'; letter-spacing: 15px; transform: skewY(5deg);">
+          <span style="color: red">T</span>
+          <span style="color: orange">I</span>
+          <span style="color: yellow">E</span>
+          <span style="color: green">N</span>
+          <span style="color: blue">D</span>
+          <span style="color: indigo">A</span>
+          <span style="color: violet">☕</span>
+          <span style="color: red">D</span>
+          <span style="color: orange">E</span>
+          <span style="color: yellow">☕</span>
+          <span style="color: green">C</span>
+          <span style="color: blue">A</span>
+          <span style="color: indigo">F</span>
+          <span style="color: violet">É</span>
+        </h1>
+        <p style="transform: rotate(-3deg); font-size: 36px; text-shadow: 5px 5px 0px black;">
+          <blink>Tu café preferido</blink> <span style="background-color: #ff00ff; color: yellow; padding: 5px;">SIEMPRE
+            CERCA</span>
+        </p>
+        <img src="https://media.giphy.com/media/yNvmkIuXGenrW/giphy.gif" width="150" height="150" style="margin: 15px;">
+        <audio autoplay loop controls>
+          <source src="https://www.soundjay.com/free-music/midnight-ride-01a.mp3" type="audio/mpeg">
+        </audio>
+        <div>
+          <a href="tienda.html" class="btn" onmouseover="this.style.fontSize='48px'"
+            onmouseout="this.style.fontSize='24px'">
+            ⭐⭐⭐ VER PRODUCTOS ⭐⭐⭐
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title"
+          style="background-color: yellow; border: 10px ridge purple; padding: 20px; text-shadow: 3px 3px 0 red, -3px -3px 0 blue;">
+          <marquee direction="up" height="50" scrollamount="3">🌟</marquee>
+          NUESTROS INCREÍBLES PRODUCTOS
+          <marquee direction="up" height="50" scrollamount="3">🌟</marquee>
+        </h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+          <span
+            style="font-size: 24px; color: red; background-color: yellow; padding: 10px; animation: blinker 1s linear infinite;">¡¡¡OFERTAS
+            LIMITADAS!!!</span>
+        </div>
+
+        <div class="productos">
+          <div class="producto">
+            <div
+              style="position: absolute; z-index: 10; transform: rotate(-30deg); background: red; color: white; padding: 5px; font-weight: bold; font-size: 20px;">
+              ¡HOT!</div>
+            <img src="img/cafe1.jpg" alt="Café Brasil" class="producto-img" style="border: 5px dotted lime;">
+            <div class="producto-info">
+              <h3 class="producto-titulo">
+                <blink>⭐ Café Brasil ⭐</blink>
+              </h3>
+              <p class="producto-descripcion">Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal para tus
+                preparaciones de café filtrado. <span style="color:red; font-weight:bold;">¡EL FAVORITO DE LOS
+                  CLIENTES!</span></p>
+              <p class="producto-precio" style="animation: colorChange 2s infinite;">$1200</p>
+              <button
+                style="background: red; color: yellow; border: 3px solid blue; font-size: 18px; padding: 5px; cursor: pointer;"
+                onclick="alert('¡PRODUCTO AÑADIDO AL CARRITO!')">COMPRAR AHORA!!!</button>
+            </div>
+          </div>
+          <div class="producto">
+            <img src="img/cafe2.jpg" alt="Café Barista" class="producto-img" style="filter: hue-rotate(90deg);">
+            <div class="producto-info">
+              <h3 class="producto-titulo" style="font-family: 'Papyrus', fantasy;">🔥 Café Barista 🔥</h3>
+              <p class="producto-descripcion">Nuestro tradicional house blend, el hijo prodigio de la casa. Granos
+                provenientes de Brasil. <marquee>¡¡¡SÚPER SABOR!!!</marquee>
+              </p>
+              <p class="producto-precio" style="transform: rotate(10deg);">$1350</p>
+              <img src="https://media.giphy.com/media/YnkMcHgNIMW4Yfmjxr/giphy.gif" width="80" height="80">
+            </div>
+          </div>
+
+          <div class="producto">
+            <img src="img/cafe3.jpg" alt="Café Minka" class="producto-img" style="animation: shake 2s infinite;">
+            <div class="producto-info"
+              style="background-image: url('https://media.giphy.com/media/LbwJp26pqGf0k/giphy.gif'); background-size: cover; color: white; text-shadow: 2px 2px black;">
+              <h3 class="producto-titulo">💥 Café Minka 💥</h3>
+              <p class="producto-descripcion">Este blend nos regala un café de gran cuerpo, con un sabor especiado. Si
+                sos amante del café intenso. <span style="font-size: 24px; color: yellow;">¡EXPLOSIÓN DE SABOR!</span>
+              </p>
+              <p class="producto-precio" style="font-size: 36px; text-shadow: 0 0 10px yellow;">$1500</p>
+              <div style="text-align: center;">
+                <img src="https://media.giphy.com/media/K3Sbp8fOgKye4/giphy.gif" width="50" height="50">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <div
+            style="border: 5px dashed red; padding: 10px; background: yellow; display: inline-block; transform: rotate(5deg);">
+            <span style="color: red; font-size: 24px; font-weight: bold;">⏰ ¡OFERTA POR TIEMPO LIMITADO! ⏰</span>
+            <p style="color: blue; font-weight: bold;">¡COMPRA 2 Y LLEVA 1 GRATIS!</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <img src="https://media.giphy.com/media/QRXwbVxk1oViM/giphy.gif" width="150" height="150">
+          <img src="https://media.giphy.com/media/wZmCr7odNxKP6/giphy.gif" width="150" height="150">
+          <img src="https://media.giphy.com/media/129rZMhNfkGm4M/giphy.gif" width="150" height="150">
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+          <span
+            style="font-size: 48px; font-family: 'Impact'; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; color: transparent;">¡¡¡VISITA
+            NUESTRA TIENDA!!!</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Características -->
+    <section class="section" style="background-color: #f0e6d9;">
+      <div class="container">
+        <h2 class="section-title">¿POR QUÉ ELEGIR TIENDA DE CAFÉ?</h2>
+        <div class="caracteristicas">
+          <div class="caracteristica">
+            <div class="caracteristica-icon">
+              <i class="fas fa-coffee"></i>
+            </div>
+            <h3 class="caracteristica-titulo">Los mejores granos</h3>
+            <p>Seleccionamos cuidadosamente los mejores granos de café de todo el mundo para ofrecerte una experiencia
+              única.</p>
+          </div>
+
+          <div class="caracteristica">
+            <div class="caracteristica-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3 class="caracteristica-titulo">Envío rápido</h3>
+            <p>Realizamos envíos a todo el país para que puedas disfrutar de nuestros productos donde quiera que estés.
+            </p>
+          </div>
+
+          <div class="caracteristica">
+            <div class="caracteristica-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <h3 class="caracteristica-titulo">Calidad garantizada</h3>
+            <p>Todos nuestros productos tienen garantía de calidad. Si no estás conforme, te devolvemos el dinero.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Ubicación -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">SIEMPRE HAY UN TIENDA CERCA TUYO</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Encontrá nuestra sucursal más cercana.</p>
+        <div style="text-align: center;">
+          <a href="contacto.html" class="btn">ENCONTRANOS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <h3 style="margin-bottom: 20px;">TIENDA DE CAFÉ</h3>
+
+        <div class="footer-links">
+          <a href="index.html">Inicio</a>
+          <a href="tienda.html">Nuestro Café</a>
+          <a href="tutoriales.html">Tutoriales</a>
+          <a href="menu.html">Nuestro Menú</a>
+          <a href="trabaja-en-tdc.html">Trabajá con Nosotros</a>
+          <a href="franquicias.html">Franquicias</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <p class="copyright">© Copyright 2025 Tienda de café - Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+
+</html>

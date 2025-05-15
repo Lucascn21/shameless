@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📞📞 SUPER CONTACTO ULTRA RÁPIDO - ¡¡LLÁMANOS YA!! 📞📞</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Enlace a Google Fonts para fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Papyrus&family=Impact&display=swap"
+      rel="stylesheet">
+    <style>
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.1);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+
+        50% {
+          transform: translateY(-20px);
+        }
+
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes colorchange {
+        0% {
+          background-color: red;
+        }
+
+        25% {
+          background-color: yellow;
+        }
+
+        50% {
+          background-color: blue;
+        }
+
+        75% {
+          background-color: green;
+        }
+
+        100% {
+          background-color: red;
+        }
+      }
+
+      @keyframes rainbow-text {
+        0% {
+          color: red;
+        }
+
+        14% {
+          color: orange;
+        }
+
+        28% {
+          color: yellow;
+        }
+
+        42% {
+          color: green;
+        }
+
+        56% {
+          color: blue;
+        }
+
+        70% {
+          color: indigo;
+        }
+
+        84% {
+          color: violet;
+        }
+
+        100% {
+          color: red;
+        }
+      }
+
+      .rainbow-text {
+        animation: rainbow-text 3s infinite;
+      }
+
+      .pulse {
+        animation: pulse 1s infinite;
+        display: inline-block;
+      }
+
+      .spin {
+        animation: spin 3s linear infinite;
+        display: inline-block;
+      }
+
+      .float {
+        animation: float 3s infinite ease-in-out;
+        display: inline-block;
+      }
+
+      .blink {
+        animation: blinker 1s linear infinite;
+      }
+
+      .colorchange {
+        animation: colorchange 5s infinite;
+      }
+
+      .contact-card:hover {
+        transform: scale(1.1) rotate(5deg);
+        z-index: 10;
+        box-shadow: 0 0 30px lime;
+      }
+    </style>
+    <script>
+      window.onload = function() {
+        // Alert notification
+        setTimeout(() => {
+          alert('¡BIENVENIDO! ¿QUIERES RECIBIR TODAS NUESTRAS PROMOCIONES POR EMAIL? ¡NO TE LAS PIERDAS!');
+        }, 1500);
+
+        // Create popup chat
+        setTimeout(() => {
+          const chatDiv = document.createElement('div');
+          chatDiv.style.position = 'fixed';
+          chatDiv.style.right = '20px';
+          chatDiv.style.bottom = '20px';
+          chatDiv.style.width = '300px';
+          chatDiv.style.background = 'linear-gradient(to right, #ff00ff, #00ffff)';
+          chatDiv.style.border = '5px dashed yellow';
+          chatDiv.style.borderRadius = '15px';
+          chatDiv.style.padding = '15px';
+          chatDiv.style.zIndex = '9999';
+          chatDiv.style.boxShadow = '0 0 20px red';
+
+          chatDiv.innerHTML = `
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <img src="https://media.giphy.com/media/OPYnG3Xf8zLag/giphy.gif" width="50" height="50" style="border-radius: 50%; margin-right: 10px; border: 2px solid white;">
+              <h3 style="font-family: 'Comic Sans MS'; color: white; margin: 0; text-shadow: 1px 1px red;">¡CHAT DE AYUDA!</h3>
+              <button style="margin-left: auto; background: red; color: white; border: none; border-radius: 50%; width: 25px; height: 25px; font-weight: bold; cursor: pointer;" onclick="this.parentNode.parentNode.style.display='none'">X</button>
+            </div>
+            <p style="font-family: 'Comic Sans MS'; color: yellow; text-shadow: 1px 1px blue; margin-bottom: 10px; font-size: 14px;">¡Hola! ¿Necesitas ayuda para contactarnos? ¡Estamos aquí para atenderte 24/7!</p>
+            <input type="text" placeholder="Escribe tu mensaje aquí..." style="width: 100%; padding: 8px; margin-bottom: 10px; border: 3px solid green; border-radius: 10px; font-family: 'Comic Sans MS';">
+            <button style="width: 100%; background: blue; color: white; padding: 8px; border: none; border-radius: 10px; font-family: 'Comic Sans MS'; cursor: pointer; animation: blinker 1s infinite;">ENVIAR MENSAJE</button>
+          `;
+
+          document.body.appendChild(chatDiv);
+        }, 3000);
+      };
+    </script>
+  </head>
+
+  <body bgcolor="#00FFCC" text="purple">
+    <!-- Header -->
+    <header
+      style="background-image: url('https://media.giphy.com/media/l41YcLtlfrQ8IAUzm/giphy.gif'); background-size: cover; border-bottom: 10px dotted magenta;">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            style="font-family: 'Papyrus', fantasy; font-size: 42px; text-shadow: 3px 3px 0 red, -3px -3px 0 blue; color: yellow; transform: rotate(-2deg); display: inline-block;">
+            <span class="blink">📞 SÚPER CONTACTO DIRECTO 📞</span>
+          </a>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+          <img src="https://media.giphy.com/media/3o7qDVHln5s9aZqs2k/giphy.gif" width="150" height="100"
+            style="border-radius: 15px; border: 5px ridge lime;">
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav
+      style="background-image: url('https://media.giphy.com/media/xUOxfjsW9fWPqEWouI/giphy.gif'); background-size: cover;">
+      <ul>
+        <li><a href="index.html" style="font-family: 'Comic Sans MS'; color: yellow; text-shadow: 2px 2px blue;">🏠
+            Inicio</a></li>
+        <li><a href="tienda.html" style="font-family: 'Papyrus'; color: lime; text-shadow: 2px 2px purple;">☕ Café</a>
+        </li>
+        <li><a href="tutoriales.html" style="font-family: 'Impact'; color: cyan; text-shadow: 2px 2px black;">📚
+            Tutoriales</a></li>
+        <li><a href="menu.html" style="font-family: 'Comic Sans MS'; color: magenta; text-shadow: 2px 2px green;">🍽️
+            Menú</a></li>
+        <li><a href="trabaja-en-tdc.html" style="font-family: 'Papyrus'; color: white; text-shadow: 2px 2px red;">💼
+            Trabajá</a></li>
+        <li><a href="franquicias.html" style="font-family: 'Impact'; color: gold; text-shadow: 2px 2px purple;">💰
+            Franquicias</a></li>
+        <li><a href="contacto.html"
+            style="font-family: 'Comic Sans MS'; color: white; background-color: red; padding: 10px; border: 3px dashed yellow; transform: scale(1.2); box-shadow: 0 0 15px cyan;">
+            <blink>📞 ¡¡¡CONTACTO!!! 📞</blink>
+          </a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section Contacto -->
+    <section class="hero"
+      style="background-image: url('https://media.giphy.com/media/3o7btXYBdKbwBzMfIc/giphy.gif'); background-size: cover; height: 500px; border-top: 10px ridge cyan; border-bottom: 10px ridge cyan;">
+      <div class="hero-content"
+        style="background-color: rgba(255, 0, 255, 0.7); border: 12px groove lime; padding: 30px; transform: rotate(-2deg); box-shadow: 0 0 50px yellow;">
+        <h1
+          style="font-family: 'Impact', fantasy; color: yellow; text-shadow: 4px 4px 0 blue, -4px -4px 0 red; font-size: 60px; letter-spacing: 5px; margin-bottom: 20px;">
+          <span class="float">📞</span>
+          <span class="rainbow-text">¡¡¡CONTÁCTANOS YA!!!</span>
+          <span class="float">📞</span>
+        </h1>
+        <p
+          style="font-family: 'Comic Sans MS', cursive; font-size: 32px; color: lime; text-shadow: 3px 3px 0 purple; margin-bottom: 20px;">
+          <marquee scrollamount="10" direction="left" width="90%">¡Estamos SUPER MEGA DISPUESTOS para ayudarte 24/7/365!
+          </marquee>
+        </p>
+        <div style="text-align: center; margin-top: 30px;">
+          <button onclick="document.getElementById('formulario').scrollIntoView({behavior: 'smooth'});"
+            style="background-color: red; color: white; font-size: 28px; padding: 20px 40px; border: 8px dashed yellow; border-radius: 15px; cursor: pointer; font-family: 'Comic Sans MS'; animation: pulse 1s infinite; transform: rotate(3deg);">
+            <span class="blink">📢</span> ¡¡CONTÁCTANOS AHORA MISMO!! <span class="blink">📢</span>
+          </button>
+        </div>
+        <div style="margin-top: 20px; text-align: center;">
+          <img src="https://media.giphy.com/media/4bjIKBOWUnVPICCzJc/giphy.gif" width="200" height="150"
+            style="border: 5px solid yellow; border-radius: 20px; box-shadow: 0 0 20px lime;">
+        </div>
+        <audio autoplay loop controls style="margin-top: 20px;">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </section> <!-- Sección Información de Contacto -->
+    <section class="section"
+      style="background-image: url('https://media.giphy.com/media/3ohhwfAa9rbXaZe86c/giphy.gif'); background-size: cover; padding: 60px 0;">
+      <div class="container"
+        style="background-color: rgba(0, 0, 255, 0.7); border: 15px groove gold; padding: 30px; border-radius: 30px; box-shadow: 0 0 50px magenta;">
+        <h2 class="section-title"
+          style="font-family: 'Impact'; color: yellow; text-shadow: 4px 4px magenta, -4px -4px cyan; font-size: 56px; letter-spacing: 6px; transform: rotate(2deg);">
+          <img src="https://media.giphy.com/media/WUaPo500MUbnFkdMJo/giphy.gif" width="80" height="80"
+            style="vertical-align: middle;">
+          <span class="blink">¡¡¡CONÉCTATE CON NOSOTROS YA!!!</span>
+          <img src="https://media.giphy.com/media/WUaPo500MUbnFkdMJo/giphy.gif" width="80" height="80"
+            style="vertical-align: middle;">
+        </h2>
+
+        <div style="text-align: center; margin: 30px 0;">
+          <marquee behavior="alternate" scrollamount="15"
+            style="font-family: 'Comic Sans MS'; color: white; font-size: 32px; text-shadow: 2px 2px red; background-color: green; padding: 10px; border: 5px dashed yellow;">
+            ¡¡¡ESTAMOS DISPONIBLES 24/7!!! ¡¡¡RESPUESTA INMEDIATA GARANTIZADA!!! ¡¡¡LLÁMANOS AHORA!!!
+          </marquee>
+        </div>
+
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: center; margin: 40px 0;">
+          <div class="contact-card"
+            style="background-image: linear-gradient(45deg, #ff00ff, #00ffff); padding: 30px; border-radius: 20px; box-shadow: 0 0 25px yellow; border: 10px ridge lime; transition: transform 0.3s; position: relative;">
+            <div
+              style="position: absolute; top: -20px; right: -20px; background-color: red; color: white; padding: 15px; border-radius: 50%; transform: rotate(15deg); font-family: 'Impact'; font-weight: bold; font-size: 18px; animation: pulse 1s infinite; box-shadow: 0 0 10px yellow; border: 3px dashed yellow;">
+              ¡VISÍTANOS!
+            </div>
+
+            <div style="font-size: 80px; color: yellow; margin-bottom: 20px; text-shadow: 5px 5px purple;"
+              class="pulse">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+
+            <h3
+              style="margin-bottom: 20px; font-family: 'Impact'; color: white; text-shadow: 3px 3px purple; font-size: 36px; letter-spacing: 2px;">
+              <span class="rainbow-text">¡¡¡DIRECCIÓN MEGA FÁCIL!!!</span>
+            </h3>
+
+            <div
+              style="background-color: rgba(255, 255, 0, 0.8); padding: 15px; border-radius: 15px; margin-bottom: 20px; border: 5px dotted red;">
+              <p
+                style="font-family: 'Comic Sans MS'; color: blue; font-size: 24px; margin-bottom: 10px; font-weight: bold; text-shadow: 1px 1px magenta;">
+                Av. Corrientes 1234<br>CABA, Argentina
+              </p>
+              <p style="font-family: 'Papyrus'; color: purple; font-size: 18px;">
+                <span class="blink" style="color: red; font-weight: bold;">¡FÁCIL DE ENCONTRAR!</span> Solo busca el
+                edificio más colorido de la ciudad
+              </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+              <img src="https://media.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif" width="150" height="100"
+                style="border-radius: 15px; border: 5px solid yellow;">
+            </div>
+
+            <div style="margin-top: 15px;">
+              <button onclick="window.open('https://www.google.com/maps')"
+                style="background-color: red; color: white; font-size: 18px; padding: 10px 20px; border: 5px dashed yellow; border-radius: 10px; cursor: pointer; font-family: 'Comic Sans MS'; animation: blinker 1s linear infinite;">
+                <i class="fas fa-map-marked-alt" style="margin-right: 10px;"></i> ¡VER EN EL MAPA!
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-card"
+            style="background-image: linear-gradient(45deg, #00ff00, #ffff00); padding: 30px; border-radius: 20px; box-shadow: 0 0 25px red; border: 10px ridge magenta; transition: transform 0.3s; position: relative;">
+            <div
+              style="position: absolute; top: -20px; right: -20px; background-color: blue; color: white; padding: 15px; border-radius: 50%; transform: rotate(-15deg); font-family: 'Impact'; font-weight: bold; font-size: 18px; animation: spin 3s infinite; box-shadow: 0 0 10px yellow; border: 3px dashed yellow;">
+              ¡LLÁMANOS!
+            </div>
+
+            <div style="font-size: 80px; color: red; margin-bottom: 20px; text-shadow: 5px 5px blue;" class="pulse">
+              <i class="fas fa-phone"></i>
+            </div>
+
+            <h3
+              style="margin-bottom: 20px; font-family: 'Impact'; color: blue; text-shadow: 3px 3px yellow; font-size: 36px; letter-spacing: 2px;">
+              <span class="blink">¡¡¡TELÉFONO SUPER DIRECTO!!!</span>
+            </h3>
+
+            <div
+              style="background-color: rgba(255, 0, 255, 0.8); padding: 15px; border-radius: 15px; margin-bottom: 20px; border: 5px dotted cyan;">
+              <p
+                style="font-family: 'Comic Sans MS'; color: yellow; font-size: 28px; margin-bottom: 10px; font-weight: bold; text-shadow: 2px 2px red;">
+                +54 11 5555-5555
+              </p>
+              <p style="font-family: 'Papyrus'; color: white; font-size: 20px;">
+                <span class="rainbow-text" style="font-weight: bold;">¡DISPONIBLE 24/7!</span> Lunes a Domingo SIEMPRE
+                DISPONIBLE
+              </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+              <img src="https://media.giphy.com/media/KHEgvyrgYnL9CElASL/giphy.gif" width="150" height="100"
+                style="border-radius: 15px; border: 5px solid cyan;">
+            </div>
+
+            <div style="margin-top: 15px;">
+              <button
+                onclick="alert('¡Estás a punto de realizar una llamada! Por favor confirma que quieres llamar ahora mismo.')"
+                style="background-color: green; color: yellow; font-size: 18px; padding: 10px 20px; border: 5px dashed red; border-radius: 10px; cursor: pointer; font-family: 'Comic Sans MS'; animation: pulse 1s linear infinite;">
+                <i class="fas fa-phone-volume" style="margin-right: 10px;"></i> ¡LLAMAR AHORA!
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-card"
+            style="background-image: linear-gradient(45deg, #ff9900, #9900ff); padding: 30px; border-radius: 20px; box-shadow: 0 0 25px cyan; border: 10px ridge yellow; transition: transform 0.3s; position: relative;">
+            <div
+              style="position: absolute; top: -20px; right: -20px; background-color: green; color: white; padding: 15px; border-radius: 50%; transform: rotate(15deg); font-family: 'Impact'; font-weight: bold; font-size: 18px; animation: blinker 1s infinite; box-shadow: 0 0 10px red; border: 3px dashed yellow;">
+              ¡EMAIL YA!
+            </div>
+
+            <div style="font-size: 80px; color: cyan; margin-bottom: 20px; text-shadow: 5px 5px green;" class="pulse">
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <h3
+              style="margin-bottom: 20px; font-family: 'Impact'; color: yellow; text-shadow: 3px 3px purple; font-size: 36px; letter-spacing: 2px;">
+              <span class="rainbow-text">¡¡¡EMAIL ULTRA RÁPIDO!!!</span>
+            </h3>
+
+            <div
+              style="background-color: rgba(0, 255, 255, 0.8); padding: 15px; border-radius: 15px; margin-bottom: 20px; border: 5px dotted blue;">
+              <p
+                style="font-family: 'Comic Sans MS'; color: purple; font-size: 24px; margin-bottom: 10px; font-weight: bold; text-shadow: 1px 1px yellow;">
+                info@tiendadecafe.com.ar<br>ventas@tiendadecafe.com.ar
+              </p>
+              <p style="font-family: 'Papyrus'; color: blue; font-size: 18px;">
+                <span class="blink" style="color: red; font-weight: bold;">¡RESPUESTA GARANTIZADA!</span> en menos de 5
+                minutos
+              </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+              <img src="https://media.giphy.com/media/3ohhwgmWRebr8jTO24/giphy.gif" width="150" height="100"
+                style="border-radius: 15px; border: 5px solid blue;">
+            </div>
+
+            <div style="margin-top: 15px;">
+              <button onclick="window.location.href='mailto:info@tiendadecafe.com.ar'"
+                style="background-color: purple; color: lime; font-size: 18px; padding: 10px 20px; border: 5px dashed yellow; border-radius: 10px; cursor: pointer; font-family: 'Comic Sans MS'; animation: colorchange 5s linear infinite;">
+                <i class="fas fa-paper-plane" style="margin-right: 10px;"></i> ¡ENVIAR EMAIL AHORA!
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <div
+            style="display: inline-block; background-color: red; padding: 15px 30px; border-radius: 15px; border: 5px dashed yellow; animation: pulse 1.5s infinite;">
+            <p style="font-family: 'Impact'; color: white; font-size: 28px; text-shadow: 2px 2px blue; margin: 0;">
+              ¡ATENCIÓN PRIORITARIA GARANTIZADA!
+            </p>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <button onclick="document.getElementById('formulario').scrollIntoView({behavior: 'smooth'});"
+              style="background-color: blue; color: yellow; font-size: 24px; padding: 15px 30px; border: 5px groove lime; border-radius: 15px; cursor: pointer; font-family: 'Comic Sans MS'; animation: blinker 1s linear infinite; box-shadow: 0 0 20px red;">
+              ¡IR AL FORMULARIO DE CONTACTO AHORA!
+            </button>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <div
+            style="display: inline-block; background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 20px; border: 3px dotted yellow; max-width: 600px;">
+            <p style="font-family: 'Comic Sans MS'; color: white; font-size: 18px;">
+              También puedes encontrarnos en nuestras <span
+                style="color: cyan; font-weight: bold; font-size: 22px;">¡¡¡SÚPER REDES SOCIALES!!!</span>
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px;">
+              <a href="#"
+                style="font-size: 40px; color: #3b5998; background-color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid blue; box-shadow: 0 0 10px cyan; animation: pulse 1.5s infinite;">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#"
+                style="font-size: 40px; color: #dd4b39; background-color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid red; box-shadow: 0 0 10px yellow; animation: pulse 1.8s infinite;">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#"
+                style="font-size: 40px; color: #00aced; background-color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid cyan; box-shadow: 0 0 10px blue; animation: pulse 2.1s infinite;">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#"
+                style="font-size: 40px; color: #ff0000; background-color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid red; box-shadow: 0 0 10px white; animation: pulse 2.4s infinite;">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#"
+                style="font-size: 40px; color: #25d366; background-color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 3px solid green; box-shadow: 0 0 10px lime; animation: pulse 2.7s infinite;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Locales -->
+    <section class="section"
+      style="background-image: url('https://media.giphy.com/media/WoWm8YzFQJg5i/giphy.gif'); background-size: cover; padding: 60px 0; border-top: 15px dashed lime; border-bottom: 15px dashed magenta;">
+      <div class="container"
+        style="background-color: rgba(255, 0, 255, 0.8); border: 20px ridge cyan; padding: 30px; border-radius: 50px; box-shadow: 0 0 100px yellow; transform: rotate(-1deg);">
+
+        <h2 class="section-title spin"
+          style="font-family: 'Impact'; color: lime; text-shadow: 5px 5px red, -5px -5px blue; font-size: 72px; letter-spacing: 10px; text-align: center;">
+          <marquee behavior="alternate" scrollamount="20" direction="left">
+            🔥🔥 ¡¡¡NUESTROS SÚPER MEGA LOCALES!!! 🔥🔥
+          </marquee>
+        </h2>
+
+        <div style="margin: 40px 0; text-align: center;">
+          <div class="colorchange"
+            style="display: inline-block; padding: 15px 30px; border-radius: 20px; border: 8px dashed yellow; margin-bottom: 30px;">
+            <p class="blink"
+              style="font-family: 'Comic Sans MS'; color: white; font-size: 36px; text-shadow: 3px 3px blue; margin: 0; font-weight: bold;">
+              🚨 ¡¡¡VISÍTANOS HOY Y GANA PREMIOS!!! 🚨
+            </p>
+          </div>
+
+          <div style="position: relative;">
+            <img src="https://media.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif" width="200" height="150"
+              style="position: absolute; top: -50px; left: 0; z-index: 10;">
+            <img src="https://media.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif" width="200" height="150"
+              style="position: absolute; top: -50px; right: 0; z-index: 10;">
+          </div>
+        </div>
+
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: center; margin: 60px 0 30px 0;">
+
+          <!-- Local Palermo -->
+          <div class="local-card float"
+            style="background-image: linear-gradient(45deg, #ff0000, #0000ff); padding: 30px; border-radius: 20px; box-shadow: 0 0 50px lime; border: 15px groove yellow; position: relative; transform: rotate(3deg);">
+
+            <div style="position: absolute; top: -30px; right: -30px; width: 100px; height: 100px;" class="spin">
+              <img src="https://media.giphy.com/media/XbOm2wxdnUO50DHjjp/giphy.gif" width="100" height="100"
+                style="border-radius: 50%; border: 5px solid white;">
+            </div>
+
+            <div
+              style="position: absolute; top: -15px; left: -15px; background-color: red; color: yellow; padding: 15px; border-radius: 50%; transform: rotate(-15deg); font-family: 'Impact'; font-weight: bold; font-size: 18px; animation: pulse 0.5s infinite; box-shadow: 0 0 10px white; border: 3px dashed cyan; z-index: 10;">
+              ¡EL MEJOR!
+            </div>
+
+            <h3 class="rainbow-text"
+              style="font-family: 'Papyrus'; font-size: 40px; text-shadow: 4px 4px black; margin-bottom: 20px; letter-spacing: 5px;">
+              ★★★ PALERMO ★★★
+            </h3>
+
+            <div
+              style="background-color: rgba(0, 255, 0, 0.7); padding: 15px; border-radius: 20px; margin: 20px 0; border: 5px dotted yellow; transform: rotate(-2deg);">
+              <p class="blink"
+                style="font-family: 'Comic Sans MS'; color: purple; font-size: 24px; font-weight: bold; margin-bottom: 10px;">
+                <i class="fas fa-map-marker-alt" style="color: red; font-size: 30px; margin-right: 10px;"></i>
+                Honduras 5832, CABA
+              </p>
+
+              <p class="pulse"
+                style="font-family: 'Impact'; color: red; font-size: 22px; margin-bottom: 10px; text-shadow: 2px 2px blue;">
+                <i class="fas fa-phone" style="color: yellow; font-size: 28px; margin-right: 10px;"></i>
+                +54 11 5555-5551
+              </p>
+
+              <p style="font-family: 'Comic Sans MS'; color: blue; font-size: 20px; text-shadow: 1px 1px red;">
+                <i class="far fa-clock" style="color: magenta; font-size: 26px; margin-right: 10px;" class="pulse"></i>
+                <span class="blink">¡ABIERTO 24/7!</span>
+              </p>
+            </div>
+
+            <div style="margin: 25px 0; text-align: center;">
+              <div
+                style="position: relative; border: 10px ridge lime; border-radius: 20px; overflow: hidden; transform: rotate(2deg); box-shadow: 0 0 30px yellow;">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.816798798797!2d-58.43859708505284!3d-34.58222128046471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58ff9a8f8b7%3A0x8a685bb0d17df696!2sHonduras%205832%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1621035801525!5m2!1ses-419!2sar"
+                  width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <div
+                  style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; background: rgba(255, 0, 255, 0.2); animation: colorchange 5s infinite;">
+                </div>
+
+                <img src="https://media.giphy.com/media/l0HlQXlQ3nHyLMvte/giphy.gif" width="80" height="80"
+                  style="position: absolute; bottom: 10px; right: 10px; border-radius: 50%; border: 3px solid white;">
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <button onclick="alert('¡HAS GANADO UN DESCUENTO DEL 99%! ¡VEN A RECLAMARLO HOY!')"
+                style="background-color: yellow; color: red; font-size: 20px; padding: 15px 30px; border: 5px dashed blue; border-radius: 15px; cursor: pointer; font-family: 'Impact'; letter-spacing: 2px; animation: pulse 0.7s infinite; transform: rotate(-3deg); box-shadow: 0 0 20px white;">
+                <i class="fas fa-star" style="margin-right: 10px; color: blue;"></i>
+                ¡RECLAMA TU PREMIO AQUÍ!
+              </button>
+            </div>
+          </div>
+
+          <!-- Local Centro -->
+          <div class="local-card float"
+            style="background-image: linear-gradient(45deg, #00ff00, #ff00ff); padding: 30px; border-radius: 20px; box-shadow: 0 0 50px red; border: 15px groove cyan; position: relative; animation-delay: 0.5s; transform: rotate(-3deg);">
+
+            <div style="position: absolute; top: -30px; right: -30px; width: 100px; height: 100px;" class="pulse">
+              <img src="https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif" width="100" height="100"
+                style="border-radius: 50%; border: 5px solid orange;">
+            </div>
+
+            <div
+              style="position: absolute; top: -15px; left: -15px; background-color: blue; color: white; padding: 15px; border-radius: 50%; transform: rotate(15deg); font-family: 'Impact'; font-weight: bold; font-size: 18px; animation: spin 3s infinite; box-shadow: 0 0 10px yellow; border: 3px dashed red; z-index: 10;">
+              ¡OFERTAS!
+            </div>
+
+            <h3 class="blink"
+              style="font-family: 'Comic Sans MS'; font-size: 40px; color: yellow; text-shadow: 4px 4px red; margin-bottom: 20px; letter-spacing: 5px;">
+              ★★★ CENTRO ★★★
+            </h3>
+
+            <div
+              style="background-color: rgba(255, 165, 0, 0.7); padding: 15px; border-radius: 20px; margin: 20px 0; border: 5px dotted blue; transform: rotate(2deg);">
+              <p class="rainbow-text"
+                style="font-family: 'Impact'; font-size: 24px; font-weight: bold; margin-bottom: 10px;">
+                <i class="fas fa-map-marker-alt" style="font-size: 30px; margin-right: 10px;"></i>
+                Florida 537, CABA
+              </p>
+
+              <p class="pulse"
+                style="font-family: 'Papyrus'; color: blue; font-size: 22px; margin-bottom: 10px; text-shadow: 2px 2px yellow;">
+                <i class="fas fa-phone" style="color: red; font-size: 28px; margin-right: 10px;"></i>
+                +54 11 5555-5552
+              </p>
+
+              <p style="font-family: 'Comic Sans MS'; color: green; font-size: 20px; text-shadow: 1px 1px orange;">
+                <i class="far fa-clock" style="color: blue; font-size: 26px; margin-right: 10px;" class="spin"></i>
+                <span class="blink" style="color: red;">¡HORARIO EXTENDIDO!</span>
+              </p>
+            </div>
+
+            <div style="margin: 25px 0; text-align: center;">
+              <div
+                style="position: relative; border: 10px ridge pink; border-radius: 20px; overflow: hidden; transform: rotate(-2deg); box-shadow: 0 0 30px cyan;">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167134901644!2d-58.37527658505223!3d-34.60142928045701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf173150fb%3A0x47ebf6d2a35a8a74!2sFlorida%20537%2C%20C1005%20AAK%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1621035884759!5m2!1ses-419!2sar"
+                  width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <div
+                  style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; background: rgba(0, 255, 255, 0.2); animation: colorchange 7s infinite;">
+                </div>
+
+                <img src="https://media.giphy.com/media/10bTCLE8GtHHS8/giphy.gif" width="80" height="80"
+                  style="position: absolute; bottom: 10px; right: 10px; border-radius: 50%; border: 3px solid white;">
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <button
+                onclick="alert('¡FELICIDADES! ¡ERES EL VISITANTE 1,000,000! GANASTE UN CAFÉ GRATIS PARA TODA TU VIDA!')"
+                style="background-color: red; color: yellow; font-size: 20px; padding: 15px 30px; border: 5px dashed white; border-radius: 15px; cursor: pointer; font-family: 'Comic Sans MS'; letter-spacing: 2px; animation: blinker 0.7s infinite; transform: rotate(3deg); box-shadow: 0 0 20px blue;">
+                <i class="fas fa-gift" style="margin-right: 10px; color: white;"></i>
+                ¡VISÍTANOS HOY!
+              </button>
+            </div>
+          </div>
+
+          <!-- Local Belgrano -->
+          <div class="local-card float"
+            style="background-image: linear-gradient(45deg, #ffff00, #0000ff); padding: 30px; border-radius: 20px; box-shadow: 0 0 50px magenta; border: 15px groove red; position: relative; animation-delay: 1s; transform: rotate(3deg);">
+
+            <div style="position: absolute; top: -30px; right: -30px; width: 100px; height: 100px;" class="spin">
+              <img src="https://media.giphy.com/media/4T3r8IKOkGDcLKBJ6y/giphy.gif" width="100" height="100"
+                style="border-radius: 50%; border: 5px solid lime;">
+            </div>
+
+            <div
+              style="position: absolute; top: -15px; left: -15px; background-color: green; color: white; padding: 15px; border-radius: 50%; transform: rotate(-15deg); font-family: 'Impact'; font-weight: bold; font-size: 18px; animation: blinker 0.3s infinite; box-shadow: 0 0 10px cyan; border: 3px dashed yellow; z-index: 10;">
+              ¡PREMIUM!
+            </div>
+
+            <h3 class="pulse"
+              style="font-family: 'Impact'; font-size: 40px; color: cyan; text-shadow: 4px 4px magenta; margin-bottom: 20px; letter-spacing: 5px;">
+              ★★★ BELGRANO ★★★
+            </h3>
+
+            <div
+              style="background-color: rgba(0, 0, 255, 0.7); padding: 15px; border-radius: 20px; margin: 20px 0; border: 5px dotted orange; transform: rotate(-2deg);">
+              <p class="blink"
+                style="font-family: 'Papyrus'; color: yellow; font-size: 24px; font-weight: bold; margin-bottom: 10px;">
+                <i class="fas fa-map-marker-alt" style="color: white; font-size: 30px; margin-right: 10px;"></i>
+                Cabildo 1848, CABA
+              </p>
+
+              <p class="rainbow-text"
+                style="font-family: 'Comic Sans MS'; font-size: 22px; margin-bottom: 10px; font-weight: bold;">
+                <i class="fas fa-phone" style="font-size: 28px; margin-right: 10px;"></i>
+                +54 11 5555-5553
+              </p>
+
+              <p class="pulse"
+                style="font-family: 'Impact'; color: lime; font-size: 20px; text-shadow: 1px 1px purple;">
+                <i class="far fa-clock" style="color: orange; font-size: 26px; margin-right: 10px;"></i>
+                <span class="colorchange" style="padding: 5px; border-radius: 10px;">¡ABIERTO CUANDO QUIERAS!</span>
+              </p>
+            </div>
+
+            <div style="margin: 25px 0; text-align: center;">
+              <div
+                style="position: relative; border: 10px ridge gold; border-radius: 20px; overflow: hidden; transform: rotate(3deg); box-shadow: 0 0 30px red;">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5958613339254!2d-58.45545498505339!3d-34.56570098046936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28491dad1%3A0x6feb6ccd6ef34b22!2sAv.%20Cabildo%201848%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1621035961974!5m2!1ses-419!2sar"
+                  width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <div
+                  style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; background: rgba(255, 255, 0, 0.2); animation: colorchange 3s infinite;">
+                </div>
+
+                <img src="https://media.giphy.com/media/8OPfYu2zxcKje/giphy.gif" width="80" height="80"
+                  style="position: absolute; bottom: 10px; right: 10px; border-radius: 50%; border: 3px solid white;">
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <button
+                onclick="alert('¡ALERTA ESPECIAL! ESTAMOS REGALANDO CAFETERAS ITALIANAS A LOS PRIMEROS 50 CLIENTES DEL DÍA. ¡CORRE!')"
+                style="background-color: purple; color: lime; font-size: 20px; padding: 15px 30px; border: 5px dashed cyan; border-radius: 15px; cursor: pointer; font-family: 'Papyrus'; letter-spacing: 2px; animation: colorchange 1s infinite; transform: rotate(-3deg); box-shadow: 0 0 20px yellow;">
+                <i class="fas fa-coffee" style="margin-right: 10px; font-size: 24px;"></i>
+                ¡PROMOCIÓN SECRETA!
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 50px; text-align: center;">
+          <div class="float"
+            style="display: inline-block; background-color: yellow; padding: 20px; border-radius: 20px; border: 8px dotted red; animation-delay: 0.5s; transform: rotate(-2deg); max-width: 80%;">
+            <h3 class="blink"
+              style="font-family: 'Impact'; color: red; font-size: 36px; text-shadow: 3px 3px blue; margin-bottom: 15px;">
+              🔔 ¡¡¡PRÓXIMAS APERTURAS!!! 🔔
+            </h3>
+
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+              <div
+                style="background-color: lime; padding: 15px; border-radius: 15px; border: 3px dashed purple; min-width: 200px;">
+                <p class="rainbow-text" style="font-family: 'Comic Sans MS'; font-size: 22px; font-weight: bold;">
+                  ¡FLORES!
+                </p>
+                <p class="pulse" style="font-family: 'Papyrus'; color: blue;">Próximamente</p>
+              </div>
+
+              <div class="blink"
+                style="background-color: cyan; padding: 15px; border-radius: 15px; border: 3px dashed red; min-width: 200px;">
+                <p class="rainbow-text" style="font-family: 'Impact'; font-size: 22px; font-weight: bold;">
+                  ¡RECOLETA!
+                </p>
+                <p style="font-family: 'Comic Sans MS'; color: red;">Próximamente</p>
+              </div>
+
+              <div
+                style="background-color: magenta; padding: 15px; border-radius: 15px; border: 3px dashed yellow; min-width: 200px;">
+                <p class="pulse" style="font-family: 'Papyrus'; color: yellow; font-size: 22px; font-weight: bold;">
+                  ¡CABALLITO!
+                </p>
+                <p class="blink" style="font-family: 'Impact'; color: white;">Próximamente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+          <img src="https://media.giphy.com/media/l4KhQo2MESJkc6QbS/giphy.gif" width="100%" height="100"
+            style="border: 10px ridge lime; border-radius: 20px; margin-bottom: 20px;">
+
+          <div style="position: relative; display: inline-block;">
+            <button onclick="window.location.href='#formulario'"
+              style="background-image: linear-gradient(45deg, red, blue, green, yellow); color: white; font-size: 28px; padding: 20px 40px; border: 8px ridge cyan; border-radius: 20px; cursor: pointer; font-family: 'Impact'; letter-spacing: 3px; animation: pulse 0.5s infinite; box-shadow: 0 0 30px lime; transform: rotate(2deg); text-shadow: 3px 3px black;">
+              👇 ¡¡¡RESERVA TU VISITA CON DESCUENTO HOY MISMO!!! 👇
+            </button>
+
+            <img src="https://media.giphy.com/media/JQAXhJsYFk3AslvK5r/giphy.gif" width="100" height="100"
+              style="position: absolute; top: -50px; left: -30px; z-index: 10;">
+            <img src="https://media.giphy.com/media/3ohzdQoCngNoESFV28/giphy.gif" width="100" height="100"
+              style="position: absolute; top: -50px; right: -30px; z-index: 10;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Formulario -->
+    <section id="formulario" class="section"
+      style="background-image: url('https://media.giphy.com/media/MF1kR4YmC2Z20/giphy.gif'); background-size: cover; padding: 60px 0; border-top: 15px dotted cyan; border-bottom: 15px dotted lime;">
+
+      <div class="container"
+        style="background-color: rgba(0, 0, 255, 0.8); border: 20px ridge magenta; padding: 40px; border-radius: 30px; box-shadow: 0 0 100px yellow; transform: rotate(1deg); position: relative;">
+
+        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="150" height="150"
+          style="position: absolute; top: -75px; left: -75px; z-index: 100; border-radius: 50%; border: 5px solid yellow; box-shadow: 0 0 20px red;">
+        <img src="https://media.giphy.com/media/3oEhn4waHVfWsruYEw/giphy.gif" width="150" height="150"
+          style="position: absolute; top: -75px; right: -75px; z-index: 100; border-radius: 50%; border: 5px solid cyan; box-shadow: 0 0 20px lime;">
+
+        <div style="position: relative; margin-bottom: 50px;">
+          <h2 class="section-title rainbow-text"
+            style="font-family: 'Papyrus'; font-size: 64px; text-align: center; letter-spacing: 10px; transform: rotate(-2deg); text-shadow: 5px 5px black;">
+            ¡¡¡ENVÍANOS TU SÚPER MEGA CONSULTA!!!
+          </h2>
+
+          <div class="pulse"
+            style="position: absolute; top: -30px; right: 50px; background-color: red; color: yellow; padding: 15px; border-radius: 50%; transform: rotate(15deg); font-family: 'Impact'; font-weight: bold; font-size: 22px; box-shadow: 0 0 20px white; border: 3px dashed lime;">
+            ¡HOT!
+          </div>
+
+          <div class="float"
+            style="position: absolute; bottom: -20px; left: 50px; background-color: yellow; color: red; padding: 15px; border-radius: 50%; transform: rotate(-15deg); font-family: 'Impact'; font-weight: bold; font-size: 22px; box-shadow: 0 0 20px lime; border: 3px dashed blue;">
+            ¡WOW!
+          </div>
+        </div>
+
+        <marquee scrollamount="15" direction="left"
+          style="margin: 30px 0; background-color: lime; padding: 10px; border-radius: 15px;">
+          <p
+            style="font-family: 'Comic Sans MS'; color: purple; font-size: 28px; font-weight: bold; margin: 0; text-shadow: 2px 2px yellow;">
+            🔥🔥🔥 ¡COMPLETÁ ESTE FORMULARIO Y RECIBIRÁS UNA SORPRESA ESPECIAL EN TU PRÓXIMA VISITA! 🎁🎁🎁
+          </p>
+        </marquee>
+
+        <div style="position: relative;">
+          <form class="formulario"
+            style="background-image: linear-gradient(45deg, #ff00ff, #00ffff); padding: 40px; border-radius: 30px; box-shadow: 0 0 50px red; border: 10px dashed yellow; transform: rotate(-1deg); max-width: 800px; margin: 0 auto;">
+
+            <div class="colorchange"
+              style="text-align: center; margin-bottom: 30px; padding: 10px; border-radius: 20px;">
+              <p class="blink"
+                style="font-family: 'Impact'; color: white; font-size: 24px; margin: 0; letter-spacing: 3px; text-shadow: 2px 2px blue;">
+                ¡TODOS LOS CAMPOS SON SÚPER MEGA OBLIGATORIOS!
+              </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <!-- Nombre -->
+              <div class="formulario-grupo float" style="animation-delay: 0.2s; margin-bottom: 25px;">
+                <label for="nombre"
+                  style="display: block; margin-bottom: 10px; font-family: 'Comic Sans MS'; color: yellow; font-size: 22px; text-shadow: 2px 2px purple; font-weight: bold;"
+                  class="pulse">
+                  👤 ¡TU NOMBRE COMPLETO! 👤
+                </label>
+                <input type="text" id="nombre" name="nombre" required
+                  style="width: 100%; padding: 15px; border: 5px dotted lime; border-radius: 15px; background-color: yellow; color: blue; font-family: 'Papyrus'; font-size: 18px; font-weight: bold; box-shadow: 0 0 15px red;"
+                  onclick="this.style.backgroundColor='pink';" placeholder="¡ESCRIBE TU NOMBRE COMPLETO AQUÍ!">
+              </div>
+
+              <!-- Email -->
+              <div class="formulario-grupo float" style="animation-delay: 0.4s; margin-bottom: 25px;">
+                <label for="email"
+                  style="display: block; margin-bottom: 10px; font-family: 'Comic Sans MS'; color: lime; font-size: 22px; text-shadow: 2px 2px blue; font-weight: bold;"
+                  class="pulse">
+                  📧 ¡TU EMAIL SÚPER SECRETO! 📧
+                </label>
+                <input type="email" id="email" name="email" required
+                  style="width: 100%; padding: 15px; border: 5px dotted magenta; border-radius: 15px; background-color: cyan; color: purple; font-family: 'Papyrus'; font-size: 18px; font-weight: bold; box-shadow: 0 0 15px green;"
+                  onclick="this.style.backgroundColor='orange';" placeholder="¡ESCRIBE TU EMAIL AQUÍ!">
+              </div>
+
+              <!-- Teléfono -->
+              <div class="formulario-grupo float" style="animation-delay: 0.6s; margin-bottom: 25px;">
+                <label for="telefono"
+                  style="display: block; margin-bottom: 10px; font-family: 'Comic Sans MS'; color: cyan; font-size: 22px; text-shadow: 2px 2px magenta; font-weight: bold;"
+                  class="pulse">
+                  📞 ¡TU NÚMERO DE TELÉFONO! 📞
+                </label>
+                <input type="tel" id="telefono" name="telefono" required
+                  style="width: 100%; padding: 15px; border: 5px dotted blue; border-radius: 15px; background-color: lime; color: red; font-family: 'Papyrus'; font-size: 18px; font-weight: bold; box-shadow: 0 0 15px yellow;"
+                  onclick="this.style.backgroundColor='magenta';" placeholder="¡ESCRIBE TU TELÉFONO AQUÍ!">
+              </div>
+
+              <!-- Asunto -->
+              <div class="formulario-grupo float" style="animation-delay: 0.8s; margin-bottom: 25px;">
+                <label for="asunto"
+                  style="display: block; margin-bottom: 10px; font-family: 'Comic Sans MS'; color: magenta; font-size: 22px; text-shadow: 2px 2px lime; font-weight: bold;"
+                  class="pulse">
+                  📌 ¡SELECCIONA UN SÚPER ASUNTO! 📌
+                </label>
+                <select id="asunto" name="asunto" required
+                  style="width: 100%; padding: 15px; border: 5px dotted yellow; border-radius: 15px; background-color: blue; color: white; font-family: 'Impact'; font-size: 18px; letter-spacing: 2px; box-shadow: 0 0 15px cyan; appearance: none;"
+                  onclick="this.style.backgroundColor='green';">
+                  <option value="" style="background-color: red; color: yellow;">¡SELECCIONA UNA OPCIÓN INCREÍBLE!
+                  </option>
+                  <option value="consulta" style="background-color: purple; color: white;">¡CONSULTA GENERAL MEGA
+                    IMPORTANTE!</option>
+                  <option value="productos" style="background-color: blue; color: yellow;">¡INFO SOBRE NUESTROS SUPER
+                    PRODUCTOS!</option>
+                  <option value="reclamo" style="background-color: red; color: white;">¡TENGO UN RECLAMO URGENTÍSIMO!
+                  </option>
+                  <option value="sugerencia" style="background-color: green; color: yellow;">¡MI SUGERENCIA BRILLANTE!
+                  </option>
+                  <option value="otro" style="background-color: orange; color: blue;">¡OTRO ASUNTO ULTRA SECRETO!
+                  </option>
+                </select>
+                <div style="position: relative;">
+                  <i class="fas fa-chevron-down"
+                    style="position: absolute; right: 20px; top: -30px; font-size: 24px; color: yellow; pointer-events: none;"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="formulario-grupo" style="margin: 30px 0;">
+              <label for="mensaje"
+                style="display: block; margin-bottom: 15px; font-family: 'Comic Sans MS'; color: yellow; font-size: 28px; text-shadow: 3px 3px red; font-weight: bold; text-align: center;"
+                class="rainbow-text">
+                💬 ¡TU MENSAJE SÚPER IMPORTANTE! 💬
+              </label>
+              <textarea id="mensaje" name="mensaje" required
+                style="width: 100%; height: 150px; padding: 20px; border: 8px dashed lime; border-radius: 20px; background-color: rgba(255, 255, 255, 0.8); color: purple; font-family: 'Comic Sans MS'; font-size: 18px; box-shadow: 0 0 25px yellow; resize: vertical;"
+                onclick="this.style.backgroundColor='#ff99ff';"
+                placeholder="¡ESCRIBE TU MENSAJE SÚPER IMPORTANTE AQUÍ! ¡CUANTO MÁS LARGO MEJOR! ¡NO TE CONTENGAS! ¡QUEREMOS SABERLO TODO!"></textarea>
+            </div>
+
+            <!-- Checkboxes -->
+            <div
+              style="margin: 30px 0; background-color: rgba(255, 255, 0, 0.7); padding: 20px; border-radius: 20px; border: 5px dotted red;">
+              <p class="blink"
+                style="font-family: 'Impact'; color: purple; font-size: 24px; margin-bottom: 15px; font-weight: bold; text-align: center;">
+                ¡OPCIONES EXTRAS ESPECTACULARES!
+              </p>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <div style="display: flex; align-items: center; margin-right: 20px;">
+                  <input type="checkbox" id="newsletter" name="newsletter"
+                    style="width: 25px; height: 25px; margin-right: 10px; cursor: pointer;">
+                  <label for="newsletter"
+                    style="font-family: 'Comic Sans MS'; color: blue; font-size: 18px; font-weight: bold; cursor: pointer;"
+                    class="pulse">
+                    ¡QUIERO RECIBIR 100 EMAILS AL DÍA!
+                  </label>
+                </div>
+
+                <div style="display: flex; align-items: center; margin-right: 20px;">
+                  <input type="checkbox" id="promociones" name="promociones"
+                    style="width: 25px; height: 25px; margin-right: 10px; cursor: pointer;">
+                  <label for="promociones"
+                    style="font-family: 'Comic Sans MS'; color: green; font-size: 18px; font-weight: bold; cursor: pointer;"
+                    class="pulse">
+                    ¡QUIERO OFERTAS EXCLUSIVAS!
+                  </label>
+                </div>
+
+                <div style="display: flex; align-items: center;">
+                  <input type="checkbox" id="terminos" name="terminos" checked
+                    style="width: 25px; height: 25px; margin-right: 10px; cursor: pointer;">
+                  <label for="terminos"
+                    style="font-family: 'Comic Sans MS'; color: red; font-size: 18px; font-weight: bold; cursor: pointer;"
+                    class="pulse">
+                    ¡ACEPTO TODO SIN LEER NADA!
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón Enviar -->
+            <div style="text-align: center; margin-top: 40px; position: relative;">
+              <button type="submit"
+                style="background-image: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff); color: white; font-size: 32px; padding: 20px 50px; border: 10px groove cyan; border-radius: 20px; cursor: pointer; font-family: 'Impact'; letter-spacing: 5px; animation: pulse 0.5s infinite; box-shadow: 0 0 40px yellow; transform: rotate(2deg); position: relative; z-index: 10; text-shadow: 3px 3px black;"
+                onclick="alert('¡GRACIAS POR TU MENSAJE! ¡ACABAS DE GANAR UN CUPÓN DE DESCUENTO DEL 90%! ¡REVISA TU EMAIL EN LOS PRÓXIMOS 30 SEGUNDOS!');">
+                <i class="fas fa-paper-plane" style="margin-right: 15px;"></i>
+                ¡¡¡ENVIAR MENSAJE AHORA MISMO!!!
+              </button>
+
+              <img src="https://media.giphy.com/media/3KVcFEmdDl9NYaFTtx/giphy.gif" width="100" height="100"
+                style="position: absolute; bottom: -30px; left: 50px; z-index: 5;">
+              <img src="https://media.giphy.com/media/jEXG2YJRgzvkWt2bGr/giphy.gif" width="100" height="100"
+                style="position: absolute; bottom: -30px; right: 50px; z-index: 5;">
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+              <p class="blink"
+                style="font-family: 'Comic Sans MS'; color: yellow; font-size: 20px; text-shadow: 2px 2px red; font-style: italic;">
+                ¡Al enviar este formulario aceptas recibir notificaciones cada 5 minutos y compartir todos tus datos con
+                nuestros mejores amigos!
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <div class="pulse"
+            style="display: inline-block; background-color: rgba(0, 255, 0, 0.7); padding: 20px; border-radius: 20px; border: 5px dashed yellow; max-width: 80%;">
+            <p style="font-family: 'Impact'; color: white; font-size: 24px; margin: 0; text-shadow: 2px 2px blue;">
+              ¡TAMBIÉN PUEDES CONTACTARNOS POR TELEPATÍA O SEÑALES DE HUMO!
+            </p>
+          </div>
+        </div>
+
+        <audio autoplay loop controls style="display: block; margin: 30px auto;">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </section>
+
+    <!-- Sección Newsletter -->
+    <section class="section"
+      style="background-image: url('https://media.giphy.com/media/f9RwfIUTWHBfO/giphy.gif'); background-size: cover; padding: 60px 0; border-top: 20px ridge cyan; border-bottom: 20px ridge magenta;">
+
+      <div class="container"
+        style="background-color: rgba(255, 0, 255, 0.8); border: 15px groove lime; padding: 40px; border-radius: 40px; box-shadow: 0 0 80px yellow; transform: rotate(-1deg); position: relative; max-width: 900px; margin: 0 auto;">
+
+        <img src="https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif" width="150" height="150"
+          style="position: absolute; top: -75px; left: -75px; z-index: 100; border-radius: 50%; border: 5px solid yellow; box-shadow: 0 0 20px lime; animation: spin 3s infinite linear;">
+        <img src="https://media.giphy.com/media/13gvXfEVlxQjDO/giphy.gif" width="150" height="150"
+          style="position: absolute; top: -75px; right: -75px; z-index: 100; border-radius: 50%; border: 5px solid cyan; box-shadow: 0 0 20px yellow; animation: spin 3s infinite linear reverse;">
+
+        <div style="position: relative; margin-bottom: 60px;">
+          <h2 class="section-title blink"
+            style="font-family: 'Impact'; font-size: 72px; text-align: center; letter-spacing: 10px; text-shadow: 5px 5px blue, -5px -5px red; color: yellow; transform: rotate(-2deg);">
+            ¡¡¡NEWSLETTER PREMIUM VIP!!!
+          </h2>
+
+          <div style="position: absolute; top: 5px; right: 20px; transform: rotate(15deg);">
+            <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="120" height="100">
+          </div>
+        </div>
+
+        <div class="float"
+          style="background-color: rgba(0, 0, 255, 0.9); padding: 25px; border-radius: 30px; border: 8px dashed yellow; margin: 30px auto; max-width: 700px; animation-duration: 3s;">
+
+          <marquee scrollamount="10" direction="right"
+            style="margin-bottom: 20px; background-color: lime; padding: 10px; border-radius: 15px;">
+            <p
+              style="font-family: 'Comic Sans MS'; color: red; font-size: 30px; font-weight: bold; margin: 0; text-shadow: 2px 2px yellow;">
+              🎁🎁🎁 ¡¡¡DESCUENTOS EXCLUSIVOS Y SÚPER MEGA NOVEDADES!!! 💰💰💰
+            </p>
+          </marquee>
+
+          <div style="text-align: center; margin: 30px 0;">
+            <p class="rainbow-text"
+              style="font-family: 'Papyrus'; font-size: 28px; font-weight: bold; padding: 15px; background-color: rgba(0, 0, 0, 0.7); border-radius: 20px; box-shadow: 0 0 20px cyan; display: inline-block;">
+              ¡SUSCRÍBETE AHORA Y RECIBE 9999 CUPONES DE DESCUENTO!
+            </p>
+
+            <div style="margin-top: 20px;">
+              <img src="https://media.giphy.com/media/l41YcUdo6sVMIrvKU/giphy.gif" width="200" height="120"
+                style="border: 5px solid yellow; border-radius: 20px; margin: 0 auto;">
+            </div>
+          </div>
+
+          <div class="pulse"
+            style="text-align: center; margin: 20px 0; background-color: rgba(255, 255, 0, 0.7); padding: 20px; border-radius: 20px; border: 5px dotted red;">
+            <p style="font-family: 'Impact'; color: purple; font-size: 24px; margin: 0;">
+              <span class="blink" style="color: red; font-weight: bold;">¡ATENCIÓN!</span> Sólo por hoy, al suscribirte
+              <span class="blink" style="color: blue; font-weight: bold;">¡RECIBIRÁS 10 CAFÉS GRATIS!</span>
+            </p>
+          </div>
+
+          <form style="margin: 30px auto; display: block; max-width: 600px;">
+            <div style="position: relative; margin-bottom: 30px;">
+              <input type="email" placeholder="¡ESCRIBE TU EMAIL AQUÍ PARA OFERTAS EXPLOSIVAS!" required
+                style="width: 100%; padding: 25px; border: 8px dotted yellow; border-radius: 25px; background-color: white; color: blue; font-family: 'Comic Sans MS'; font-size: 22px; font-weight: bold; box-shadow: 0 0 30px red; text-align: center;">
+
+              <div class="spin"
+                style="position: absolute; top: -20px; right: -20px; background-color: red; color: white; padding: 15px; border-radius: 50%; font-family: 'Impact'; font-weight: bold; font-size: 16px; box-shadow: 0 0 15px yellow; border: 3px dashed cyan;">
+                ¡GRATIS!
+              </div>
+            </div>
+
+            <div style="text-align: center; position: relative;">
+              <button type="submit"
+                style="background-image: linear-gradient(45deg, #ff00ff, #00ffff); color: white; font-size: 36px; padding: 20px 60px; border: 10px ridge gold; border-radius: 30px; cursor: pointer; font-family: 'Impact'; letter-spacing: 5px; animation: colorchange 1s infinite; box-shadow: 0 0 40px green; transform: rotate(2deg); text-shadow: 3px 3px black;"
+                onclick="alert('¡FELICIDADES! ¡TE HAS SUSCRITO A 15 NEWSLETTERS DIFERENTES! RECIBIRÁS TU PRIMER EMAIL EN 2 MINUTOS.');">
+                <i class="fas fa-envelope" style="margin-right: 15px;"></i>
+                ¡¡¡SUSCRÍBETE AHORA!!!
+              </button>
+
+              <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="120" height="120"
+                style="position: absolute; bottom: -50px; left: 20px; z-index: 5; transform: rotate(-15deg);">
+              <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="120" height="120"
+                style="position: absolute; bottom: -50px; right: 20px; z-index: 5; transform: rotate(15deg);">
+            </div>
+          </form>
+
+          <div class="colorchange"
+            style="margin-top: 80px; padding: 15px; border-radius: 20px; border: 3px dashed white; text-align: center;">
+            <p class="blink" style="font-family: 'Comic Sans MS'; color: white; font-size: 16px; margin: 0;">
+              *Al suscribirte aceptas recibir 10 emails por hora, incluso a las 3 de la madrugada, y compartir tu
+              información con
+              <span style="text-decoration: underline;">absolutamente todo el mundo</span>. ¡No te arrepentirás...
+              probablemente!
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <div style="display: flex; justify-content: center; gap: 20px; margin: 0 auto; flex-wrap: wrap;">
+            <div class="pulse"
+              style="background-color: yellow; padding: 15px; border-radius: 15px; border: 3px solid red; display: flex; align-items: center; gap: 10px;">
+              <i class="fas fa-gift" style="font-size: 30px; color: red;"></i>
+              <p style="font-family: 'Impact'; color: blue; font-size: 18px; margin: 0;">
+                ¡REGALOS DIARIOS!
+              </p>
+            </div>
+
+            <div class="blink"
+              style="background-color: lime; padding: 15px; border-radius: 15px; border: 3px solid blue; display: flex; align-items: center; gap: 10px;">
+              <i class="fas fa-percentage" style="font-size: 30px; color: blue;"></i>
+              <p style="font-family: 'Comic Sans MS'; color: red; font-size: 18px; margin: 0;">
+                ¡DESCUENTOS LOCOS!
+              </p>
+            </div>
+
+            <div class="float"
+              style="background-color: magenta; padding: 15px; border-radius: 15px; border: 3px solid cyan; display: flex; align-items: center; gap: 10px;">
+              <i class="fas fa-coffee" style="font-size: 30px; color: cyan;"></i>
+              <p style="font-family: 'Papyrus'; color: yellow; font-size: 18px; margin: 0;">
+                ¡CAFÉS GRATIS!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <img src="https://media.giphy.com/media/3o7btWApup3qJnpdJu/giphy.gif" width="100%" height="100"
+            style="border: 8px ridge gold; border-radius: 15px; margin-top: 20px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      style="background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif'); background-size: cover; padding: 60px 0; border-top: 20px groove yellow; position: relative; overflow: hidden;">
+
+      <!-- Fake popup -->
+      <div id="popup" class="blink"
+        style="position: fixed; bottom: 20px; left: 20px; background-image: linear-gradient(45deg, #ff0000, #00ff00); padding: 20px; border-radius: 15px; border: 5px dashed yellow; box-shadow: 0 0 30px cyan; z-index: 1000; max-width: 300px;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+          <h4 style="font-family: 'Impact'; color: white; margin: 0; font-size: 20px; text-shadow: 2px 2px blue;">
+            ¡ÚLTIMA HORA!
+          </h4>
+          <button
+            style="background: red; color: white; border: 2px solid white; border-radius: 50%; width: 25px; height: 25px; font-weight: bold; cursor: pointer;"
+            onclick="this.parentNode.parentNode.style.display='none'">X</button>
+        </div>
+        <p style="font-family: 'Comic Sans MS'; color: yellow; margin: 0; font-size: 16px; text-shadow: 1px 1px red;">
+          ¡Acabamos de lanzar un nuevo café con sabor a chicle! ¡Visítanos para probarlo!
+        </p>
+      </div>
+
+      <!-- Contador falso -->
+      <div id="visitor-counter" class="pulse"
+        style="position: fixed; bottom: 20px; right: 20px; background-color: rgba(0, 0, 255, 0.8); padding: 15px; border-radius: 15px; border: 5px solid lime; box-shadow: 0 0 20px yellow; z-index: 1000; text-align: center;">
+        <h4 style="font-family: 'Impact'; color: yellow; margin: 0 0 5px 0; font-size: 18px; text-shadow: 2px 2px red;">
+          VISITANTES ONLINE:
+        </h4>
+        <p id="counter"
+          style="font-family: 'Digital'; color: lime; margin: 0; font-size: 24px; font-weight: bold; text-shadow: 1px 1px green;">
+          1,337
+        </p>
+      </div>
+
+      <script>
+        // Script para contador falso que aumenta aleatoriamente
+        setInterval(function() {
+          const counterEl = document.getElementById('counter');
+          let count = parseInt(counterEl.innerText.replace(/,/g, ''));
+          count += Math.floor(Math.random() * 10) + 1;
+          counterEl.innerText = count.toLocaleString();
+        }, 3000);
+      </script>
+
+      <div class="container"
+        style="background-color: rgba(128, 0, 128, 0.9); border: 15px ridge cyan; padding: 40px; border-radius: 30px; box-shadow: 0 0 70px lime; transform: rotate(1deg); position: relative; max-width: 1000px; margin: 0 auto;">
+
+        <img src="https://media.giphy.com/media/3o7bu8sRnYpTOG1p8k/giphy.gif" width="100%" height="80"
+          style="position: absolute; top: 0; left: 0; right: 0; opacity: 0.6;">
+
+        <h3 class="rainbow-text"
+          style="font-family: 'Impact'; font-size: 60px; text-align: center; letter-spacing: 8px; margin-bottom: 30px; text-shadow: 4px 4px black;">
+          ☕☕☕ SÚPER TIENDA DE CAFÉ ☕☕☕
+        </h3>
+
+        <div style="position: relative; text-align: center; margin: 50px 0;">
+          <div class="colorchange"
+            style="padding: 20px; border-radius: 20px; border: 8px dashed yellow; display: inline-block; margin-bottom: 30px;">
+            <p class="blink"
+              style="font-family: 'Comic Sans MS'; color: white; font-size: 28px; font-weight: bold; margin: 0; text-shadow: 2px 2px blue;">
+              ¡SÍGUENOS EN LAS REDES Y RECIBE OFERTAS SECRETAS!
+            </p>
+          </div>
+
+          <div class="social-links"
+            style="display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap;">
+            <a href="#" class="pulse"
+              style="font-size: 60px; color: #3b5998; background-color: yellow; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 5px solid blue; box-shadow: 0 0 20px cyan; animation-duration: 0.8s; transform: rotate(-5deg);">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="pulse"
+              style="font-size: 60px; color: #dd4b39; background-color: lime; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 5px solid red; box-shadow: 0 0 20px yellow; animation-duration: 1s; transform: rotate(5deg);">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="pulse"
+              style="font-size: 60px; color: #00aced; background-color: magenta; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 5px solid cyan; box-shadow: 0 0 20px blue; animation-duration: 1.2s; transform: rotate(-5deg);">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="pulse"
+              style="font-size: 60px; color: #ff0000; background-color: cyan; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 5px solid red; box-shadow: 0 0 20px white; animation-duration: 1.4s; transform: rotate(5deg);">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="pulse"
+              style="font-size: 60px; color: #25d366; background-color: pink; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; border: 5px solid green; box-shadow: 0 0 20px lime; animation-duration: 1.6s; transform: rotate(-5deg);">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 50px 0; text-align: center;">
+
+          <a href="index.html" class="float"
+            style="font-family: 'Comic Sans MS'; font-size: 24px; color: yellow; text-decoration: none; background-color: blue; padding: 15px; border-radius: 15px; border: 5px dashed red; display: block; animation-duration: 1.5s; transform: rotate(-3deg); box-shadow: 0 0 15px lime; text-shadow: 2px 2px purple;">
+            🏠 INICIO INCREÍBLE 🏠
+          </a>
+          <a href="tienda.html" class="float"
+            style="font-family: 'Papyrus'; font-size: 24px; color: lime; text-decoration: none; background-color: red; padding: 15px; border-radius: 15px; border: 5px dashed yellow; display: block; animation-duration: 2s; transform: rotate(3deg); box-shadow: 0 0 15px cyan; text-shadow: 2px 2px blue; animation-delay: 0.1s;">
+            ☕ NUESTRO SÚPER CAFÉ ☕
+          </a>
+          <a href="tutoriales.html" class="float"
+            style="font-family: 'Impact'; font-size: 24px; color: cyan; text-decoration: none; background-color: purple; padding: 15px; border-radius: 15px; border: 5px dashed white; display: block; animation-duration: 2.5s; transform: rotate(-3deg); box-shadow: 0 0 15px yellow; text-shadow: 2px 2px red; animation-delay: 0.2s;">
+            📚 MEGA TUTORIALES 📚
+          </a>
+          <a href="menu.html" class="float"
+            style="font-family: 'Comic Sans MS'; font-size: 24px; color: magenta; text-decoration: none; background-color: green; padding: 15px; border-radius: 15px; border: 5px dashed blue; display: block; animation-duration: 3s; transform: rotate(3deg); box-shadow: 0 0 15px red; text-shadow: 2px 2px lime; animation-delay: 0.3s;">
+            🍽️ NUESTRO MENÚ DELUXE 🍽️
+          </a>
+          <a href="trabaja-en-tdc.html" class="float"
+            style="font-family: 'Papyrus'; font-size: 24px; color: white; text-decoration: none; background-color: orange; padding: 15px; border-radius: 15px; border: 5px dashed magenta; display: block; animation-duration: 3.5s; transform: rotate(-3deg); box-shadow: 0 0 15px blue; text-shadow: 2px 2px green; animation-delay: 0.4s;">
+            💼 TRABAJÁ CON NOSOTROS 💼
+          </a>
+          <a href="franquicias.html" class="float"
+            style="font-family: 'Impact'; font-size: 24px; color: gold; text-decoration: none; background-color: blue; padding: 15px; border-radius: 15px; border: 5px dashed cyan; display: block; animation-duration: 4s; transform: rotate(3deg); box-shadow: 0 0 15px orange; text-shadow: 2px 2px purple; animation-delay: 0.5s;">
+            💰 FRANQUICIAS DE ORO 💰
+          </a>
+          <a href="contacto.html" class="blink"
+            style="font-family: 'Comic Sans MS'; font-size: 24px; color: white; text-decoration: none; background-color: red; padding: 15px; border-radius: 15px; border: 5px dashed yellow; display: block; transform: scale(1.2); box-shadow: 0 0 20px cyan; text-shadow: 2px 2px blue; position: relative; z-index: 10; animation-duration: 0.5s;">
+            📞 ¡¡¡CONTACTO ULTRA RÁPIDO!!! 📞
+          </a>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0; position: relative;">
+          <img src="https://media.giphy.com/media/xT9IgzUuC5Ss6ZnTEs/giphy.gif" width="150" height="150"
+            style="border-radius: 50%; border: 5px solid yellow; box-shadow: 0 0 20px red; position: absolute; top: -30px; left: 50px; z-index: 5;">
+          <img src="https://media.giphy.com/media/3o7btQsLqXMJAPu6Na/giphy.gif" width="150" height="150"
+            style="border-radius: 50%; border: 5px solid cyan; box-shadow: 0 0 20px lime; position: absolute; top: -30px; right: 50px; z-index: 5;">
+
+          <div
+            style="background-color: rgba(0, 0, 0, 0.7); padding: 30px; border-radius: 20px; border: 10px ridge lime; display: inline-block; margin-top: 50px;">
+            <p class="rainbow-text" style="font-family: 'Impact'; font-size: 18px; margin: 0; letter-spacing: 2px;">
+              © Copyright 3025 Súper Tienda de Café - ¡¡¡TODOS LOS DERECHOS MEGA RESERVADOS!!!
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+          <button
+            onclick="alert('¡FELICIDADES! ¡HAS ENCONTRADO EL BOTÓN SECRETO! COMPARTE ESTA PÁGINA CON 10 AMIGOS PARA RECLAMAR TU PREMIO MISTERIOSO.')"
+            style="background-color: red; color: yellow; font-size: 24px; padding: 15px 30px; border: 6px groove cyan; border-radius: 20px; cursor: pointer; font-family: 'Comic Sans MS'; animation: pulse 1s infinite; box-shadow: 0 0 20px lime; transform: rotate(-3deg);">
+            ¡¡¡BOTÓN SECRETO!!! 🎁 ¡HAGA CLIC AQUÍ! 🎁 ¡¡¡BOTÓN SECRETO!!!
+          </button>
+        </div>
+
+        <!-- Cursor personalizado -->
+        <script>
+          document.body.style.cursor = "url('https://cur.cursors-4u.net/nature/nat-1/nat49.cur'), auto";
+        </script>
+
+        <!-- Efecto de hoja cayendo -->
+        <div id="falling-leaves"></div>
+        <style>
+          #falling-leaves {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+          }
+
+          .leaf {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-image: url('https://media.giphy.com/media/l4FGp0Rlc5d0pjt3q/giphy.gif');
+            background-size: contain;
+            z-index: 1000;
+            pointer-events: none;
+            animation: fall linear;
+          }
+
+          @keyframes fall {
+            0% {
+              transform: translate(0, -50px) rotate(0deg);
+              opacity: 1;
+            }
+
+            100% {
+              transform: translate(100px, 1000px) rotate(360deg);
+              opacity: 0.3;
+            }
+          }
+        </style>
+
+        <script>
+          // Crear hojas cayendo
+          function createLeaf() {
+            const leaf = document.createElement('div');
+            leaf.className = 'leaf';
+            leaf.style.left = Math.random() * 100 + 'vw';
+            leaf.style.animationDuration = Math.random() * 5 + 3 + 's';
+
+            document.getElementById('falling-leaves').appendChild(leaf);
+
+            setTimeout(() => {
+              leaf.remove();
+            }, 8000);
+          }
+
+          setInterval(createLeaf, 300);
+        </script>
+      </div>
+    </footer>
+  </body>
+
+</html>
