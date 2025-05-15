@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~~~ ¡¡¡¡TIENDA DE CAFÉ!!!! ~~~ ¡¡¡PRODUCTOS EXCLUSIVOS!!! ~~~</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Enlace a Google Fonts para fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Papyrus&display=swap" rel="stylesheet">
+    <style>
+      blink {
+        animation: blinker 0.6s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+
+      .producto-img:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="#00ffff" onload="alert('¡BIENVENIDO A NUESTRA COLECCIÓN EXCLUSIVA DE CAFÉS!')" text="magenta">
+    <!-- Header -->
+    <header>
+      <marquee behavior="alternate" direction="left" scrollamount="15">☕☕☕ ¡CAFÉS PREMIUM RECIÉN TOSTADOS! ☕☕☕</marquee>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            style="font-family: 'Papyrus', fantasy; font-size: 36px; text-shadow: 3px 3px 5px red, -3px -3px 5px blue;">
+            <blink>☕ TIENDA DE CAFÉ ☕</blink>
+          </a>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://media.giphy.com/media/3jVT4U5bilspG/giphy.gif" width="120" height="120">
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav
+      style="background-image: url('https://media.giphy.com/media/eeYbfcTxoxGlG/giphy.gif'); background-size: cover;">
+      <ul>
+        <li><a href="index.html" style="color: yellow; background-color: purple;">🏠 Inicio 🏠</a></li>
+        <li><a href="tienda.html"
+            style="color: white; background-color: red; transform: rotate(-5deg); display: inline-block; border: 3px dashed lime;">
+            <blink>☕ Nuestro Café ☕</blink>
+          </a></li>
+        <li><a href="tutoriales.html" style="font-family: 'Comic Sans MS';">🎓 Tutoriales 🎓</a></li>
+        <li><a href="menu.html" style="background: linear-gradient(to right, red, orange, yellow);">🍽️ Nuestro Menú</a>
+        </li>
+        <li><a href="trabaja-en-tdc.html" style="text-decoration: underline wavy blue;">💼 Trabajá con Nosotros</a></li>
+        <li><a href="franquicias.html" style="font-style: italic; letter-spacing: 5px;">💰 Franquicias</a></li>
+        <li><a href="contacto.html" style="border-radius: 50%; padding: 15px; background-color: green;">📞 Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section Tienda -->
+    <section class="hero"
+      style="background-image: url('https://media.giphy.com/media/uUs14eCA2SBgs/giphy.gif'); background-size: cover;">
+      <div class="hero-content"
+        style="background-color: rgba(255, 0, 255, 0.7); border: 10px ridge gold; padding: 20px;">
+        <h1 style="font-family: 'Papyrus', fantasy; letter-spacing: 10px; transform: skewX(15deg);">
+          <span style="color: cyan">N</span>
+          <span style="color: yellow">U</span>
+          <span style="color: lime">E</span>
+          <span style="color: orange">S</span>
+          <span style="color: pink">T</span>
+          <span style="color: white">R</span>
+          <span style="color: cyan">O</span>
+          <span style="color: yellow">S</span>
+          <span style="color: lime">☕</span>
+          <span style="color: orange">C</span>
+          <span style="color: pink">A</span>
+          <span style="color: white">F</span>
+          <span style="color: cyan">É</span>
+          <span style="color: yellow">S</span>
+        </h1>
+        <p style="font-size: 28px; font-weight: bold; color: yellow; text-shadow: 3px 3px 0 blue;">
+          <blink>¡¡¡Conocé todos nuestros INCREÍBLES productos de café!!!</blink>
+        </p>
+        <img src="https://media.giphy.com/media/UO5elnTqo4vSg/giphy.gif" width="200" height="200">
+      </div>
+    </section> <!-- Sección Productos -->
+    <section class="section"
+      style="background-image: url('https://media.giphy.com/media/26BRqPg05olzXG1BiG/giphy.gif'); background-size: cover; padding: 30px 0;">
+      <div class="container">
+        <h2 class="section-title"
+          style="background-color: cyan; border: 8px dotted magenta; padding: 15px; transform: rotate(3deg); color: purple; text-shadow: 4px 4px 0 yellow;">
+          <marquee direction="right" scrollamount="8">☕☕☕</marquee>
+          NUESTROS SÚPER CAFÉS PREMIUM DELUXE
+          <marquee direction="left" scrollamount="8">☕☕☕</marquee>
+        </h2>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+          <span
+            style="font-size: 30px; padding: 10px; color: white; background: linear-gradient(to right, red, orange); border-radius: 15px; box-shadow: 0 0 20px yellow; animation: blinker 1s linear infinite;">
+            ¡¡¡DESCUENTO DEL 20% EN TODOS LOS PRODUCTOS HOY!!!
+          </span>
+        </div>
+
+        <div class="productos" style="background-color: rgba(255, 255, 0, 0.3); padding: 20px; border-radius: 20px;">
+          <div class="producto" style="transform: rotate(-2deg); border: 5px solid red;">
+            <div
+              style="position: absolute; top: -10px; right: -10px; background-color: red; color: yellow; padding: 10px; font-weight: bold; border-radius: 50%; font-size: 18px; z-index: 10; animation: blinker 0.5s linear infinite;">
+              HOT!</div>
+            <img src="img/cafe1.jpg" alt="Café Brasil" class="producto-img"
+              style="filter: saturate(200%); border: 8px ridge gold;">
+            <div class="producto-info" style="background-color: #ff00ff;">
+              <h3 class="producto-titulo"
+                style="font-family: 'Comic Sans MS'; color: yellow; text-shadow: 2px 2px blue;">
+                <blink>★★★ Café Brasil PREMIUM ★★★</blink>
+              </h3>
+              <p class="producto-descripcion" style="color: cyan; font-weight: bold; font-size: 18px;">Un café de cuerpo
+                suave, y baja acidez hacen de BRASIL el ideal para tus
+                preparaciones de café filtrado. <span style="color: lime; font-size: 24px; font-weight: bold;">¡¡¡EL MÁS
+                  VENDIDO!!!</span></p>
+              <div style="position: relative;">
+                <p class="producto-precio" style="color: yellow; font-size: 36px; animation: shake 2s infinite;">$1200
+                </p>
+                <span
+                  style="position: absolute; top: 0; right: 20px; color: red; font-size: 24px; text-decoration: line-through;">$1500</span>
+              </div>
+              <button
+                style="background: lime; color: purple; border: 5px dashed blue; font-size: 24px; padding: 10px; cursor: pointer; font-weight: bold;"
+                onclick="alert('¡PRODUCTO AÑADIDO AL CARRITO! ¡FELICIDADES POR TU COMPRA!')">¡¡¡COMPRAR
+                AHORA!!!</button>
+            </div>
+          </div>
+
+          <div class="producto" style="transform: rotate(3deg); border: 5px dotted blue;">
+            <img src="img/cafe2.jpg" alt="Café Barista" class="producto-img"
+              style="filter: hue-rotate(180deg) contrast(150%);">
+            <div class="producto-info"
+              style="background-image: url('https://media.giphy.com/media/ZZkCo8zKWtt2ZgozfX/giphy.gif'); background-size: cover;">
+              <h3 class="producto-titulo"
+                style="font-family: 'Papyrus', fantasy; color: white; text-shadow: 3px 3px 0 black; font-size: 28px;">🔥
+                Café Barista EXTREMO 🔥</h3>
+              <p class="producto-descripcion"
+                style="color: white; font-weight: bold; background-color: rgba(0,0,0,0.7); padding: 10px;">Nuestro
+                tradicional house blend, el hijo prodigio de la casa. Granos
+                provenientes de Brasil, nos permiten obtener este cafe pleno, de cuerpo medio, sin acidez ni amargor.
+                <marquee direction="up" height="30" scrollamount="2" style="color: yellow;">¡SABOR INIGUALABLE!
+                </marquee>
+              </p>
+              <p class="producto-precio"
+                style="color: yellow; font-size: 28px; transform: scale(1.5) rotate(-5deg); display: inline-block;">
+                $1350</p>
+              <div style="text-align: center; margin-top: 10px;">
+                <img src="https://media.giphy.com/media/kGXdt5gHDfEpW/giphy.gif" width="100" height="100">
+              </div>
+            </div>
+          </div>
+          <div class="producto" style="transform: rotate(-3deg); border: 6px groove green;">
+            <div
+              style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: yellow; color: red; padding: 5px; font-weight: bold; z-index: 10; font-size: 20px; border: 3px solid black; animation: shake 1s infinite;">
+              ¡OFERTA EXCLUSIVA!</div>
+            <img src="img/cafe3.jpg" alt="Café Minka" class="producto-img" style="filter: brightness(150%) sepia(50%);">
+            <div class="producto-info" style="background-color: #006400; color: yellow;">
+              <h3 class="producto-titulo"
+                style="font-size: 30px; font-weight: bold; text-decoration: underline overline wavy red;">💥💥 Café
+                Minka ULTRA 💥💥</h3>
+              <p class="producto-descripcion" style="font-family: 'Comic Sans MS'; font-size: 20px;">Este blend nos
+                regala un café de gran cuerpo, con un sabor especiado. Si
+                sos amante del café intenso, te vas a enamorar de nuestro Minka. <span
+                  style="color: red; font-size: 24px; font-weight: bold;">¡SABOR EXPLOSIVO!</span></p>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p class="producto-precio" style="font-size: 32px; color: lime; text-shadow: 2px 2px 4px black;">$1500
+                </p>
+                <img src="https://media.giphy.com/media/3o7TKP5aUZJ99wgnlu/giphy.gif" width="80" height="80">
+              </div>
+              <button
+                style="width: 100%; background: orange; color: blue; font-size: 22px; padding: 8px; cursor: pointer; font-weight: bold; border: 4px double red;"
+                onclick="alert('¡WOW! ¡HAS ELEGIDO NUESTRO MEJOR CAFÉ!')">¡AGREGAR AL CARRITO AHORA!</button>
+            </div>
+          </div>
+
+          <div class="producto" style="transform: skewY(2deg); border: 5px dashed orange; overflow: visible;">
+            <img src="img/cafe1.jpg" alt="Café Colombia" class="producto-img"
+              style="filter: contrast(130%) grayscale(50%); box-shadow: 0 0 20px red;">
+            <div class="producto-info"
+              style="background-image: url('https://media.giphy.com/media/H2GI31pC7SUfhmkYhX/giphy.gif'); background-size: cover; padding: 15px;">
+              <h3 class="producto-titulo"
+                style="color: white; text-shadow: 2px 2px 0 blue, -2px -2px 0 green; font-family: 'Papyrus', fantasy;">
+                <blink>⭐ Café Colombia PREMIUM ⭐</blink>
+              </h3>
+              <p class="producto-descripcion"
+                style="color: white; background-color: rgba(0,0,0,0.6); padding: 10px; border-radius: 15px; font-weight: bold;">
+                Nuestro varietal clásico. Adentrate en las regiones colombianas con este
+                café de cuerpo suave, gusto frutado, aroma floral y una delicada acidez. Inconfundible. <marquee
+                  width="60%" direction="right" scrollamount="4" style="color: yellow;">¡SABOR ÚNICO!</marquee>
+              </p>
+              <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <p class="producto-precio"
+                  style="font-size: 40px; color: yellow; transform: rotate(-5deg); margin: 15px;">$1600</p>
+                <div
+                  style="background-color: red; color: white; padding: 5px; border-radius: 10px; margin-bottom: 10px; font-weight: bold; animation: blinker 1s linear infinite;">
+                  ¡ÚLTIMO LOTE DISPONIBLE!</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="producto" style="transform: rotate(5deg); border: 7px ridge purple; position: relative;">
+            <div
+              style="position: absolute; top: -20px; right: -20px; background-color: blue; color: white; padding: 10px; font-weight: bold; border-radius: 50%; z-index: 10; font-size: 16px;">
+              ¡NUEVO!</div>
+            <img src="img/cafe2.jpg" alt="Café Descafeinado" class="producto-img"
+              style="filter: blur(1px) brightness(110%); border: 3px solid yellow;">
+            <div class="producto-info" style="background-color: #800080; color: white;">
+              <h3 class="producto-titulo"
+                style="font-family: 'Comic Sans MS'; letter-spacing: 3px; text-decoration: underline;">🌙 Café
+                Descafeinado RELAX 🌙</h3>
+              <p class="producto-descripcion" style="font-style: italic; font-size: 18px;">Si querés disfrutar un
+                exquisito café, pero reducir tu dosis diaria de
+                cafeína, este es tu blend! Café originario de Colombia, suave, de cuerpo medio y un aroma que te invita
+                a probarlo. <span style="color: cyan; font-weight: bold;">¡DISFRUTA SIN INSOMNIO!</span></p>
+              <p class="producto-precio"
+                style="font-size: 30px; color: gold; font-weight: bold; text-shadow: 2px 2px 4px black; animation: shake 2s infinite;">
+                $1400</p>
+              <div style="text-align: center; margin-top: 10px;">
+                <img src="https://media.giphy.com/media/QyJzrC3BaW0YU/giphy.gif" width="100" height="100">
+                <button
+                  style="margin-top: 10px; background: cyan; color: darkblue; border: 3px solid white; font-size: 20px; padding: 5px 15px; cursor: pointer; font-weight: bold;"
+                  onclick="alert('¡PERFECTO PARA LA NOCHE! ¡BUENA ELECCIÓN!')">¡COMPRAR YA!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promotional Banners -->
+        <div style="margin-top: 40px;">
+          <div style="text-align: center;">
+            <div
+              style="background-color: yellow; border: 8px solid red; padding: 15px; display: inline-block; transform: rotate(-3deg); max-width: 80%; margin-bottom: 30px;">
+              <h2 style="color: red; font-size: 36px; text-shadow: 2px 2px 0 blue; font-family: 'Comic Sans MS';">
+                <blink>¡¡¡OFERTA ESPECIAL!!!</blink>
+              </h2>
+              <p style="color: green; font-size: 24px; font-weight: bold;">COMPRÁ 2 PAQUETES DE CAFÉ Y LLEVATE EL 3RO
+                ¡¡¡ABSOLUTAMENTE GRATIS!!!</p>
+              <img src="https://media.giphy.com/media/h4TdHo3RExSbHd9bOe/giphy.gif" width="200" height="150">
+              <p style="color: purple; font-size: 18px; margin-top: 10px;">Oferta válida hasta agotar stock. No
+                acumulable con otras promociones.</p>
+            </div>
+          </div>
+
+          <marquee behavior="scroll" direction="left" scrollamount="10"
+            style="background-color: lime; color: blue; font-size: 24px; padding: 10px; font-weight: bold; margin-bottom: 20px;">
+            ¡¡¡ENVÍO GRATIS EN COMPRAS SUPERIORES A $5000!!! 🚚 ¡¡¡ENVÍO GRATIS EN COMPRAS SUPERIORES A $5000!!! 🚚
+            ¡¡¡ENVÍO GRATIS EN COMPRAS SUPERIORES A $5000!!!
+          </marquee>
+
+          <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-bottom: 30px;">
+            <img src="https://media.giphy.com/media/xUOwG4WLCbrCeZWFtS/giphy.gif" width="150" height="150"
+              style="margin: 10px;">
+            <img src="https://media.giphy.com/media/26gsiCIKW7ANEmxKE/giphy.gif" width="150" height="150"
+              style="margin: 10px;">
+            <img src="https://media.giphy.com/media/3ohjUMiV57jzu3eFDG/giphy.gif" width="150" height="150"
+              style="margin: 10px;">
+          </div>
+
+          <div style="text-align: center; margin-bottom: 30px;">
+            <button
+              style="background-color: red; color: yellow; font-size: 36px; padding: 20px 40px; border: 5px dashed blue; cursor: pointer; font-family: 'Papyrus', fantasy; font-weight: bold; box-shadow: 0 0 30px cyan;"
+              onclick="alert('¡FELICIDADES! ¡HAS GANADO UN CUPÓN DE DESCUENTO DEL 50%! CÓDIGO: CAFE50')">
+              ¡HAZ CLICK AQUÍ PARA GANAR UN PREMIO ESPECIAL!
+            </button>
+          </div>
+
+          <div
+            style="background-image: url('https://media.giphy.com/media/VxbP9tLeKzazm/giphy.gif'); background-size: cover; padding: 30px; color: white; text-align: center; margin-bottom: 30px;">
+            <h3 style="font-size: 32px; text-shadow: 2px 2px 4px black;">¡SUSCRÍBETE A NUESTRO NEWSLETTER!</h3>
+            <p style="font-size: 20px; margin-bottom: 15px; text-shadow: 1px 1px 3px black;">Recibe todas nuestras
+              ofertas y novedades directamente en tu email</p>
+            <input type="email" placeholder="Tu email aquí"
+              style="padding: 10px; width: 60%; font-size: 18px; margin-right: 10px; border: 3px solid magenta;">
+            <button
+              style="padding: 10px; background-color: magenta; color: white; font-size: 18px; border: none; cursor: pointer;"
+              onclick="alert('¡GRACIAS POR SUSCRIBIRTE! ¡RECIBIRÁS SPAM A DIARIO!')">SUSCRIBIRME</button>
+          </div>
+        </div>
+
+      </div>
+    </section> <!-- Sección Cómo elegir -->
+    <section class="section"
+      style="background-image: url('https://media.giphy.com/media/OprROZ7YhXMfS/giphy.gif'); background-size: cover; padding: 40px 0;">
+      <div class="container"
+        style="background-color: rgba(255, 192, 203, 0.8); border: 10px groove blue; padding: 20px;">
+        <h2 class="section-title"
+          style="font-family: 'Papyrus', fantasy; color: purple; text-shadow: 3px 3px yellow; transform: skewX(-15deg); letter-spacing: 5px; font-size: 42px;">
+          <blink>¿¿¿CÓMO ELEGIR TU CAFÉ PERFECTO???</blink>
+        </h2>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+          <img src="https://media.giphy.com/media/3jVT4U5bilspG/giphy.gif" width="150" height="150"
+            style="border-radius: 50%; border: 5px solid lime;">
+        </div>
+
+        <div class="caracteristicas" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+          <div class="caracteristica"
+            style="flex: 0 1 30%; background-color: yellow; border: 4px dashed red; padding: 15px; margin-bottom: 20px; transform: rotate(3deg);">
+            <div class="caracteristica-icon"
+              style="font-size: 48px; color: green; text-shadow: 2px 2px blue; animation: shake 2s infinite;">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3 class="caracteristica-titulo"
+              style="font-family: 'Comic Sans MS'; color: red; font-size: 28px; text-decoration: underline wavy purple;">
+              ORIGEN EXCLUSIVO</h3>
+            <p style="color: blue; font-weight: bold; font-size: 18px;">El origen determina gran parte del sabor del
+              café. Cada región productora tiene características únicas
+              que se traducen en el sabor final. <span style="color: red; font-size: 22px;">¡PAÍSES EXÓTICOS!</span></p>
+            <marquee direction="right" scrollamount="3" style="margin-top: 10px; color: green;">Colombia ⭐ Brasil ⭐
+              Etiopía ⭐ Jamaica ⭐ Vietnam</marquee>
+          </div>
+
+          <div class="caracteristica"
+            style="flex: 0 1 30%; background-color: magenta; border: 4px dotted cyan; padding: 15px; margin-bottom: 20px; transform: rotate(-2deg);">
+            <div class="caracteristica-icon"
+              style="font-size: 48px; color: orange; text-shadow: 2px 2px white; animation: blinker 1s linear infinite;">
+              <i class="fas fa-fire"></i>
+            </div>
+            <h3 class="caracteristica-titulo"
+              style="font-family: 'Papyrus', fantasy; color: yellow; font-size: 28px; text-shadow: 2px 2px red;">SUPER
+              TOSTADO</h3>
+            <p style="color: white; font-weight: bold; font-size: 18px;">El nivel de tostado influye directamente en el
+              sabor: los tostados claros son más ácidos, mientras que
+              los oscuros son más intensos. <span style="font-size: 22px; color: yellow;">¡TOSTADO PERFECTO!</span></p>
+            <img src="https://media.giphy.com/media/l378w0HOZsEwj1UrK/giphy.gif" width="100" height="100"
+              style="margin-top: 10px;">
+          </div>
+
+          <div class="caracteristica"
+            style="flex: 0 1 30%; background-color: lime; border: 4px ridge blue; padding: 15px; margin-bottom: 20px; transform: rotate(5deg);">
+            <div class="caracteristica-icon" style="font-size: 48px; color: purple; text-shadow: 2px 2px yellow;">
+              <i class="fas fa-mortar-pestle"></i>
+            </div>
+            <h3 class="caracteristica-titulo"
+              style="font-family: 'Comic Sans MS'; color: red; font-size: 28px; letter-spacing: 3px;">MOLIENDA PRO</h3>
+            <p style="color: blue; font-weight: bold; font-size: 18px;">Cada método de preparación requiere un tipo
+              específico de molienda para extraer el mejor sabor de tu
+              café. <span style="color: red; font-size: 22px; font-weight: bold;">¡TEXTURA PERFECTA!</span></p>
+            <div style="text-align: center; margin-top: 15px;">
+              <button
+                style="background: red; color: white; border: 3px solid yellow; padding: 5px 10px; font-size: 16px; cursor: pointer;"
+                onclick="alert('¡APRENDE MÁS SOBRE MOLIENDAS EN NUESTROS TUTORIALES!')">¡VER TUTORIALES!</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; transform: rotate(-1deg);">
+          <span
+            style="font-size: 36px; padding: 10px; background-color: yellow; color: red; border: 3px dashed blue; font-family: 'Comic Sans MS';">
+            ¡CONVIÉRTETE EN UN EXPERTO DEL CAFÉ!
+          </span>
+        </div>
+      </div>
+    </section> <!-- Footer -->
+    <footer
+      style="background-image: url('https://media.giphy.com/media/3o6Zt6GJHXRCqc4CDe/giphy.gif'); background-size: cover; border-top: 10px dotted yellow;">
+      <div class="container">
+        <h3
+          style="margin-bottom: 20px; font-family: 'Papyrus', fantasy; color: lime; font-size: 36px; text-shadow: 3px 3px magenta; transform: rotate(-3deg); text-align: center;">
+          <blink>☕☕☕ TIENDA DE CAFÉ PREMIUM ☕☕☕</blink>
+        </h3>
+
+        <marquee direction="right" scrollamount="10"
+          style="margin: 20px 0; color: yellow; font-size: 24px; font-weight: bold;">
+          ¡¡¡SÍGUENOS EN TODAS NUESTRAS REDES SOCIALES PARA MÁS OFERTAS EXCLUSIVAS!!!
+        </marquee>
+
+        <div class="footer-links" style="display: flex; flex-wrap: wrap; justify-content: center; margin: 30px 0;">
+          <a href="index.html"
+            style="margin: 10px; padding: 10px; background-color: red; color: white; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed yellow; font-size: 18px; border-radius: 15px;">🏠
+            Inicio 🏠</a>
+          <a href="tienda.html"
+            style="margin: 10px; padding: 10px; background-color: blue; color: yellow; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed white; font-size: 18px; transform: rotate(5deg); display: inline-block;">☕
+            Nuestro Café ☕</a>
+          <a href="tutoriales.html"
+            style="margin: 10px; padding: 10px; background-color: green; color: white; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed yellow; font-size: 18px; border-radius: 15px;">🎓
+            Tutoriales 🎓</a>
+          <a href="menu.html"
+            style="margin: 10px; padding: 10px; background-color: purple; color: white; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed lime; font-size: 18px; transform: rotate(-3deg); display: inline-block;">🍽️
+            Nuestro Menú 🍽️</a>
+          <a href="trabaja-en-tdc.html"
+            style="margin: 10px; padding: 10px; background-color: orange; color: black; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed blue; font-size: 18px; border-radius: 15px;">💼
+            Trabajá con Nosotros 💼</a>
+          <a href="franquicias.html"
+            style="margin: 10px; padding: 10px; background-color: cyan; color: purple; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed red; font-size: 18px; transform: rotate(3deg); display: inline-block;">💰
+            Franquicias 💰</a>
+          <a href="contacto.html"
+            style="margin: 10px; padding: 10px; background-color: magenta; color: white; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed green; font-size: 18px; border-radius: 15px;">📞
+            Contacto 📞</a>
+        </div>
+
+        <div class="social-links" style="text-align: center; margin: 30px 0;">
+          <a href="#" style="font-size: 48px; color: #3b5998; margin: 0 15px; text-shadow: 2px 2px 5px yellow;"><i
+              class="fab fa-facebook"></i></a>
+          <a href="#" style="font-size: 48px; color: #c13584; margin: 0 15px; text-shadow: 2px 2px 5px lime;"><i
+              class="fab fa-instagram"></i></a>
+          <a href="#" style="font-size: 48px; color: #1da1f2; margin: 0 15px; text-shadow: 2px 2px 5px magenta;"><i
+              class="fab fa-twitter"></i></a>
+        </div>
+
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="https://media.giphy.com/media/3o6UB3VhArvomJHtdK/giphy.gif" width="80" height="80"
+            style="margin: 0 10px;">
+          <img src="https://media.giphy.com/media/10aThS073IU1vq/giphy.gif" width="80" height="80"
+            style="margin: 0 10px;">
+          <img src="https://media.giphy.com/media/3o6UB3VhArvomJHtdK/giphy.gif" width="80" height="80"
+            style="margin: 0 10px;">
+        </div>
+
+        <p class="copyright"
+          style="color: yellow; font-size: 18px; text-align: center; font-family: 'Comic Sans MS'; margin-top: 20px; background-color: rgba(0,0,0,0.5); padding: 10px; border: 2px dashed white;">
+          <blink>© Copyright 2025 Tienda de café - ¡¡¡TODOS LOS DERECHOS RESERVADOS!!! - ¡¡¡SITIO WEB DISEÑADO CON MUCHO
+            ♥!!!</blink>
+        </p>
+
+        <div style="text-align: center; margin-top: 20px;">
+          <span
+            style="color: red; font-size: 12px; background-color: yellow; padding: 5px; font-family: 'Comic Sans MS';">
+            Contador de visitas: <span style="font-weight: bold;">1,258,764</span> ¡Gracias por visitarnos!
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function mostrarAlerta() {
+        alert('¡NO TE OLVIDES DE REVISAR NUESTRAS OFERTAS ESPECIALES!');
+      }
+      setTimeout(mostrarAlerta, 15000);
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⭐⭐⭐ SÚPER MENÚ ESTELAR DE CAFÉ ⭐⭐⭐</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Enlace a Google Fonts para fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Papyrus&display=swap" rel="stylesheet">
+    <style>
+      blink {
+        animation: blinker 0.5s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+
+      .shake {
+        display: inline-block;
+        animation: shake 0.5s infinite;
+      }
+
+      .menu-item {
+        animation: rainbow-bg 8s linear infinite;
+      }
+
+      @keyframes rainbow-bg {
+        0% {
+          background-color: rgba(255, 0, 0, 0.3);
+        }
+
+        14% {
+          background-color: rgba(255, 127, 0, 0.3);
+        }
+
+        28% {
+          background-color: rgba(255, 255, 0, 0.3);
+        }
+
+        42% {
+          background-color: rgba(0, 255, 0, 0.3);
+        }
+
+        56% {
+          background-color: rgba(0, 0, 255, 0.3);
+        }
+
+        70% {
+          background-color: rgba(75, 0, 130, 0.3);
+        }
+
+        84% {
+          background-color: rgba(143, 0, 255, 0.3);
+        }
+
+        100% {
+          background-color: rgba(255, 0, 0, 0.3);
+        }
+      }
+
+      .price-tag {
+        animation: rotate 3s infinite linear;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .menu-section {
+        border: 5px dashed lime;
+        margin-bottom: 40px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="#ff00ff" text="yellow" onload="alert('¡BIENVENIDO AL MENÚ MÁS DELICIOSO DEL UNIVERSO ENTERO!')">
+    <!-- Header -->
+    <header
+      style="background-image: url('https://media.giphy.com/media/l0Ex2HCB9st1FAvEQ/giphy.gif'); background-size: cover;">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            style="font-family: 'Papyrus', fantasy; font-size: 40px; text-shadow: 5px 5px 0 blue, -5px -5px 0 red;">
+            <blink>☕☕☕ MENÚ ESPECTACULAR DE CAFÉ ☕☕☕</blink>
+          </a>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://media.giphy.com/media/QAUs3kHBNENfvw1Jva/giphy.gif" width="150" height="150"
+            style="border-radius: 50%; border: 5px dotted lime;">
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav
+      style="background-image: url('https://media.giphy.com/media/cmegx6SHZw37TlLwik/giphy.gif'); background-size: cover;">
+      <ul>
+        <li><a href="index.html" style="font-family: 'Comic Sans MS'; color: cyan; text-shadow: 2px 2px red;">🏠
+            Inicio</a></li>
+        <li><a href="tienda.html" style="font-family: 'Papyrus'; color: yellow; text-shadow: 2px 2px blue;">☕ Café</a>
+        </li>
+        <li><a href="tutoriales.html" style="font-family: 'Arial'; color: lime; text-shadow: 2px 2px purple;">📚
+            Tutoriales</a></li>
+        <li><a href="menu.html"
+            style="font-family: 'Comic Sans MS'; color: white; background-color: red; padding: 10px; border: 3px dashed yellow; transform: scale(1.2); box-shadow: 0 0 15px cyan;">
+            <blink>🍽️ MENÚ 🍽️</blink>
+          </a></li>
+        <li><a href="trabaja-en-tdc.html"
+            style="font-family: 'Courier New'; color: orange; text-shadow: 2px 2px green;">💼 Trabajá</a></li>
+        <li><a href="franquicias.html" style="font-family: 'Papyrus'; color: magenta; text-shadow: 2px 2px black;">💰
+            Franquicias</a></li>
+        <li><a href="contacto.html" style="font-family: 'Comic Sans MS'; color: green; text-shadow: 2px 2px yellow;">📞
+            Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section Menú -->
+    <section class="hero"
+      style="background-image: url('https://media.giphy.com/media/uUs6iYA4SbQs33Bnav/giphy.gif'); background-size: cover; height: 400px;">
+      <div class="hero-content"
+        style="background-color: rgba(0, 0, 255, 0.7); border: 10px ridge gold; padding: 30px; box-shadow: 0 0 50px lime;">
+        <h1
+          style="font-family: 'Comic Sans MS'; color: yellow; text-shadow: 4px 4px 0 red, -4px -4px 0 green; font-size: 50px; letter-spacing: 5px; transform: rotate(-3deg);">
+          <span class="shake">🍔</span> NUESTRO SÚPER MENÚ <span class="shake">🍕</span>
+        </h1>
+        <p style="font-family: 'Papyrus', fantasy; font-size: 28px; color: lime; text-shadow: 3px 3px 0 purple;">
+          <marquee scrollamount="10" direction="left" width="80%">Descubrí todas nuestras INCREÍBLES y DELICIOSAS
+            opciones</marquee>
+        </p>
+        <audio autoplay loop controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </section> <!-- Sección Menú -->
+    <section class="section"
+      style="background-image: url('https://media.giphy.com/media/l2Sq9qGTQnL5NyI6Y/giphy.gif'); background-size: cover;">
+      <div class="container"
+        style="background-color: rgba(255, 255, 0, 0.8); border: 15px groove magenta; padding: 25px; box-shadow: 0 0 50px blue;">
+        <h2 class="section-title"
+          style="font-family: 'Comic Sans MS'; color: red; text-shadow: 5px 5px 0 blue; font-size: 48px; letter-spacing: 8px; transform: skewY(-5deg);">
+          <img src="https://media.giphy.com/media/3o7bu8sRnYpTOG1p8k/giphy.gif" width="80" height="80"
+            style="vertical-align: middle;">
+          <blink>¡¡NUESTROS SUPER PLATOS!!</blink>
+          <img src="https://media.giphy.com/media/3o7bu8sRnYpTOG1p8k/giphy.gif" width="80" height="80"
+            style="vertical-align: middle;">
+        </h2>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+          <marquee behavior="alternate" scrollamount="12"
+            style="font-family: 'Papyrus'; color: purple; font-size: 28px; text-shadow: 2px 2px lime; background-color: cyan; padding: 10px; border: 3px dotted red;">
+            ¡PRUEBA NUESTRAS DELICIOSAS ESPECIALIDADES GOURMET PREMIUM DE SUPER LUJO!
+          </marquee>
+        </div>
+
+        <div class="menu-section"
+          style="background-image: url('https://media.giphy.com/media/BWl9N6rNmxb0s/giphy.gif'); background-size: cover; border: 10px ridge gold; box-shadow: 0 0 30px red; transform: rotate(1deg);">
+          <h3
+            style="margin: 20px 0; font-family: 'Comic Sans MS'; color: yellow; text-shadow: 3px 3px blue; font-size: 36px; text-align: center; background-color: rgba(255, 0, 0, 0.7); padding: 15px; border-radius: 20px; transform: rotate(-2deg);">
+            <span style="display: inline-block; animation: shake 0.5s infinite;">☕</span>
+            SUPER MEGA CAFETERÍA PREMIUM
+            <span style="display: inline-block; animation: shake 0.5s infinite;">☕</span>
+          </h3>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(255,0,0,0.5), rgba(0,255,255,0.5)); margin: 20px 0; padding: 20px; border: 5px dashed lime; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(1deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: white; text-shadow: 2px 2px magenta; display: block; margin-bottom: 10px;">
+                <blink>✨ Espresso DELUXE ✨</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: yellow; font-size: 18px; text-shadow: 1px 1px black;">El
+                clásico café italiano, SUPER INTENSO y ULTRA AROMÁTICO, preparado por EXPERTOS BARISTAS GALARDONADOS.
+              </p>
+              <img src="https://media.giphy.com/media/3jVT4U5bilspG/giphy.gif" width="100" height="100"
+                style="margin-top: 10px; border: 3px solid white; border-radius: 50%;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: lime; text-shadow: 2px 2px purple; background-color: blue; padding: 15px; border-radius: 50%; border: 3px dotted yellow; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(15deg);">$300</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(0,255,0,0.5), rgba(255,0,255,0.5)); margin: 20px 0; padding: 20px; border: 5px dashed cyan; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(-1deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: yellow; text-shadow: 2px 2px red; display: block; margin-bottom: 10px;">
+                <blink>💪 Doble Espresso EXTREMO 💪</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: white; font-size: 18px; text-shadow: 1px 1px black;">DOBLE
+                DOSIS de nuestro EXCLUSIVÍSIMO blend secreto para VERDADEROS AMANTES DEL CAFÉ.</p>
+              <img src="https://media.giphy.com/media/3o85xkX0kyeV0GKqSk/giphy.gif" width="100" height="100"
+                style="margin-top: 10px; border: 3px solid yellow; border-radius: 50%;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: white; text-shadow: 2px 2px green; background-color: red; padding: 15px; border-radius: 50%; border: 3px dotted cyan; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(-15deg);">$400</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(255,255,0,0.5), rgba(0,0,255,0.5)); margin: 20px 0; padding: 20px; border: 5px dashed magenta; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(2deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: lime; text-shadow: 2px 2px blue; display: block; margin-bottom: 10px;">
+                <blink>🌟 Cappuccino PREMIUM GOLD 🌟</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: cyan; font-size: 18px; text-shadow: 1px 1px black;">Espresso
+                con leche SUPER cremada y espuma ULTRA ESPONJOSA preparada con TÉCNICAS SECRETAS.</p>
+              <img src="https://media.giphy.com/media/omHPYZttAVAAw/giphy.gif" width="100" height="100"
+                style="margin-top: 10px; border: 3px solid lime; border-radius: 50%;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: yellow; text-shadow: 2px 2px red; background-color: purple; padding: 15px; border-radius: 50%; border: 3px dotted white; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(20deg);">$450</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(255,0,255,0.5), rgba(0,255,0,0.5)); margin: 20px 0; padding: 20px; border: 5px dashed yellow; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(-2deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: white; text-shadow: 2px 2px green; display: block; margin-bottom: 10px;">
+                <blink>💎 Latte LUXURY EDITION 💎</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: yellow; font-size: 18px; text-shadow: 1px 1px black;">
+                Espresso con leche SUAVEMENTE TEXTURIZADA por nuestros BARISTAS CAMPEONES MUNDIALES de LATTE ART.</p>
+              <img src="https://media.giphy.com/media/UO5elnTqo4vSg/giphy.gif" width="100" height="100"
+                style="margin-top: 10px; border: 3px solid magenta; border-radius: 50%;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: lime; text-shadow: 2px 2px blue; background-color: magenta; padding: 15px; border-radius: 50%; border: 3px dotted cyan; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(-10deg);">$450</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(0,0,255,0.5), rgba(255,255,0,0.5)); margin: 20px 0; padding: 20px; border: 5px dashed red; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(3deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: cyan; text-shadow: 2px 2px purple; display: block; margin-bottom: 10px;">
+                <blink>👑 Flat White ROYAL SELECTION 👑</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: white; font-size: 18px; text-shadow: 1px 1px black;">DOBLE
+                ESPRESSO con leche EXTRA CREMOSA y ULTRA ATERCIOPELADA de VACAS ALIMENTADAS CON FLORES.</p>
+              <img src="https://media.giphy.com/media/tAykJK1jxWkIo/giphy.gif" width="100" height="100"
+                style="margin-top: 10px; border: 3px solid cyan; border-radius: 50%;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: yellow; text-shadow: 2px 2px green; background-color: blue; padding: 15px; border-radius: 50%; border: 3px dotted red; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(15deg);">$500</span>
+          </div>
+        </div>
+        <div class="menu-section"
+          style="background-image: url('https://media.giphy.com/media/ULKnZ7hW07rlS/giphy.gif'); background-size: cover; border: 10px ridge magenta; box-shadow: 0 0 30px yellow; transform: rotate(-1deg);">
+          <h3
+            style="margin: 20px 0; font-family: 'Comic Sans MS'; color: yellow; text-shadow: 3px 3px purple; font-size: 36px; text-align: center; background-color: rgba(0, 0, 255, 0.7); padding: 15px; border-radius: 20px; transform: rotate(2deg);">
+            <span style="display: inline-block; animation: shake 0.5s infinite;">🍰</span>
+            PASTELERÍA EXTRAORDINARIA SUPREMA
+            <span style="display: inline-block; animation: shake 0.5s infinite;">🍪</span>
+          </h3>
+
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="https://media.giphy.com/media/11c7UUfN4eoHF6/giphy.gif" width="200" height="150"
+              style="border: 5px dashed lime;">
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(255,192,203,0.7), rgba(255,255,0,0.7)); margin: 20px 0; padding: 20px; border: 5px dashed cyan; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(2deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: red; text-shadow: 2px 2px yellow; display: block; margin-bottom: 10px;">
+                <blink>🥐 Croissant FRANCÉS SUPREMO 🥐</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: blue; font-size: 18px; text-shadow: 1px 1px white; background-color: rgba(255,255,255,0.5); padding: 10px; border-radius: 10px;">
+                Clásico croissant de manteca IMPORTADA DE FRANCIA, ULTRA CRUJIENTE y MEGA ESPONJOSO, hecho por MAESTROS
+                PANADEROS con 50 AÑOS DE EXPERIENCIA.
+              </p>
+              <div style="margin-top: 10px;">
+                <button
+                  style="background-color: green; color: white; font-size: 16px; padding: 5px 10px; border: 2px solid yellow; cursor: pointer;"
+                  onclick="alert('¡CROISSANT AÑADIDO A TU PEDIDO!')">¡LO QUIERO YA!</button>
+              </div>
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: red; text-shadow: 2px 2px yellow; background-color: lime; padding: 15px; border-radius: 50%; border: 3px dotted purple; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(-15deg);">$350</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(139,69,19,0.7), rgba(210,105,30,0.7)); margin: 20px 0; padding: 20px; border: 5px dashed yellow; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(-2deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: white; text-shadow: 2px 2px black; display: block; margin-bottom: 10px;">
+                <blink>🍫 Pain au Chocolat DELUXE EDITION 🍫</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: yellow; font-size: 18px; text-shadow: 1px 1px black; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 10px;">
+                Croissant relleno con chocolate BELGA DE ALTÍSIMA CALIDAD importado directamente de BRUSELAS y
+                seleccionado por EXPERTOS CHOCOLATEROS.
+              </p>
+              <img src="https://media.giphy.com/media/10SrYA4mLDdyU/giphy.gif" width="100" height="100"
+                style="margin-top: 10px; border: 3px solid white; border-radius: 10px;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: white; text-shadow: 2px 2px brown; background-color: chocolate; padding: 15px; border-radius: 50%; border: 3px dotted white; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(10deg);">$400</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(255,165,0,0.7), rgba(255,127,80,0.7)); margin: 20px 0; padding: 20px; border: 5px dashed white; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(2deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: green; text-shadow: 2px 2px white; display: block; margin-bottom: 10px;">
+                <blink>🥕 Carrot Cake MEGA SALUDABLE 🥕</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: white; font-size: 18px; text-shadow: 1px 1px brown; background-color: rgba(139,69,19,0.5); padding: 10px; border-radius: 10px;">
+                Torta SUPER HÚMEDA de zanahoria ORGÁNICA con frosting de queso crema IMPORTADO y adornada con NUECES
+                CARAMELIZADAS de los ALPES SUIZOS.
+              </p>
+              <img src="https://media.giphy.com/media/10u8FcpgFZG5Lq/giphy.gif" width="100" height="100"
+                style="margin-top: 10px; border: 3px solid green; border-radius: 10px;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: green; text-shadow: 2px 2px orange; background-color: white; padding: 15px; border-radius: 50%; border: 3px dotted orange; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(-10deg);">$500</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(255,255,255,0.7), rgba(255,192,203,0.7)); margin: 20px 0; padding: 20px; border: 5px dashed red; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(-3deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: purple; text-shadow: 2px 2px pink; display: block; margin-bottom: 10px;">
+                <blink>🍓 Cheesecake EXTRAVAGANZA PREMIUM 🍓</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: red; font-size: 18px; text-shadow: 1px 1px white; background-color: rgba(255,255,255,0.5); padding: 10px; border-radius: 10px;">
+                CREMOSÍSIMO cheesecake con base de galleta ARTESANAL y coulis de frutos rojos SILVESTRES RECOGIDOS A
+                MANO al amanecer en los BOSQUES ESCANDINAVOS.
+              </p>
+              <div style="display: flex; justify-content: center; margin-top: 10px;">
+                <img src="https://media.giphy.com/media/12bVDtXPOzYwda/giphy.gif" width="100" height="100"
+                  style="border: 3px solid pink; border-radius: 10px; margin-right: 10px;">
+                <img src="https://media.giphy.com/media/443jypLvVhvYQ/giphy.gif" width="100" height="100"
+                  style="border: 3px solid red; border-radius: 10px;">
+              </div>
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: white; text-shadow: 2px 2px purple; background-color: pink; padding: 15px; border-radius: 50%; border: 3px dotted red; display: inline-block; width: 80px; height: 80px; line-height: 80px; text-align: center; transform: rotate(15deg);">$600</span>
+          </div>
+
+          <div
+            style="text-align: center; margin: 30px 0; background-color: rgba(255,255,0,0.7); padding: 15px; border-radius: 20px; border: 5px dashed magenta;">
+            <span
+              style="font-family: 'Comic Sans MS'; font-size: 24px; color: red; text-shadow: 2px 2px blue; font-weight: bold;">
+              <blink>¡PROMOCIÓN ESPECIAL DEL DÍA!</blink>
+            </span>
+            <p style="font-family: 'Papyrus'; font-size: 20px; color: green; margin: 10px 0;">
+              ¡Compra cualquier postre y llévate un café GRATIS!
+            </p>
+            <button
+              style="background-color: red; color: white; font-size: 20px; padding: 10px 20px; border: 5px solid blue; cursor: pointer; animation: blinker 1s linear infinite;"
+              onclick="alert('¡FELICIDADES! ¡HAS ACTIVADO LA PROMOCIÓN!')">¡ACTIVAR PROMOCIÓN!</button>
+          </div>
+        </div>
+        <div class="menu-section"
+          style="background-image: url('https://media.giphy.com/media/26gJyrD9whEgDJAuA/giphy.gif'); background-size: cover; border: 10px ridge cyan; box-shadow: 0 0 30px green; transform: rotate(1deg);">
+          <h3
+            style="margin: 20px 0; font-family: 'Comic Sans MS'; color: lime; text-shadow: 3px 3px blue; font-size: 36px; text-align: center; background-color: rgba(255, 0, 255, 0.7); padding: 15px; border-radius: 20px; transform: rotate(-2deg);">
+            <span style="display: inline-block; animation: shake 0.5s infinite;">🍽️</span>
+            SUPER ALMUERZOS GOURMET DE LUJO
+            <span style="display: inline-block; animation: shake 0.5s infinite;">🍴</span>
+          </h3>
+
+          <div style="text-align: center; margin: 20px 0;">
+            <marquee behavior="alternate" scrollamount="10"
+              style="color: yellow; font-size: 24px; text-shadow: 2px 2px red; background-color: blue; padding: 10px;">
+              ¡TODOS NUESTROS ALMUERZOS SON PREPARADOS POR CHEFS CON 10 ESTRELLAS MICHELIN!
+            </marquee>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(0,0,255,0.7), rgba(0,255,255,0.7)); margin: 20px 0; padding: 20px; border: 5px dashed yellow; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(-2deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: yellow; text-shadow: 2px 2px red; display: block; margin-bottom: 10px;">
+                <blink>🐟 Bagel de Salmón PREMIUM GOLD EDITION 🐟</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: white; font-size: 18px; text-shadow: 1px 1px black; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 10px;">
+                Bagel ARTESANAL con queso crema IMPORTADO DE SUIZA, salmón ahumado DE ALASKA, alcaparras de la REGIÓN
+                DEL MEDITERRÁNEO y rúcula ORGÁNICA cultivada en NUESTRA HUERTA EXCLUSIVA.
+              </p>
+              <img src="https://media.giphy.com/media/l4pTfx2qLszoacZRS/giphy.gif" width="120" height="120"
+                style="margin-top: 10px; border: 3px solid gold; border-radius: 10px;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: gold; text-shadow: 2px 2px blue; background-color: red; padding: 15px; border-radius: 50%; border: 3px dotted white; display: inline-block; width: 90px; height: 90px; line-height: 90px; text-align: center; transform: rotate(10deg);">$950</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(50,205,50,0.7), rgba(154,205,50,0.7)); margin: 20px 0; padding: 20px; border: 5px dashed magenta; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(2deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: white; text-shadow: 2px 2px green; display: block; margin-bottom: 10px;">
+                <blink>🥑 Avocado Toast EXQUISITO DELUXE 🥑</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: blue; font-size: 18px; text-shadow: 1px 1px white; background-color: rgba(255,255,255,0.5); padding: 10px; border-radius: 10px;">
+                Pan de masa madre FERMENTADO DURANTE 48 HORAS con palta HASS SELECCIONADA A MANO, huevo poché de
+                GALLINAS LIBRES y semillas ORGÁNICAS ANCESTRALES de los ANDES.
+              </p>
+              <div style="display: flex; margin-top: 10px;">
+                <img src="https://media.giphy.com/media/3ohryitAiN5XYfQTHq/giphy.gif" width="100" height="100"
+                  style="border: 3px solid white; border-radius: 10px; margin-right: 10px;">
+                <button
+                  style="background-color: purple; color: white; font-size: 16px; padding: 10px; border: 3px solid yellow; cursor: pointer; height: 60px; margin-top: auto; margin-bottom: auto;"
+                  onclick="alert('¡AVOCADO TOAST AÑADIDO A TU PEDIDO!')">¡ME LO LLEVO!</button>
+              </div>
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: yellow; text-shadow: 2px 2px green; background-color: blue; padding: 15px; border-radius: 50%; border: 3px dotted white; display: inline-block; width: 90px; height: 90px; line-height: 90px; text-align: center; transform: rotate(-10deg);">$850</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(255,165,0,0.7), rgba(255,215,0,0.7)); margin: 20px 0; padding: 20px; border: 5px dashed blue; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(-2deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: purple; text-shadow: 2px 2px yellow; display: block; margin-bottom: 10px;">
+                <blink>🌱 Bowl de Quinoa SUPER POWER ULTRA FOOD 🌱</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: green; font-size: 18px; text-shadow: 1px 1px white; background-color: rgba(255,255,255,0.5); padding: 10px; border-radius: 10px;">
+                Quinoa REAL DEL ALTIPLANO BOLIVIANO con vegetales asados EN HORNO DE LEÑA, aguacate PREMIUM y aderezo de
+                yogur GRIEGO AUTÉNTICO preparado por MONJES ORTODOXOS.
+              </p>
+              <img src="https://media.giphy.com/media/l4pSWOugqrWqCmrEQ/giphy.gif" width="120" height="120"
+                style="margin-top: 10px; border: 3px solid green; border-radius: 50%;">
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: green; text-shadow: 2px 2px gold; background-color: white; padding: 15px; border-radius: 50%; border: 3px dotted purple; display: inline-block; width: 90px; height: 90px; line-height: 90px; text-align: center; transform: rotate(15deg);">$900</span>
+          </div>
+
+          <div class="menu-item"
+            style="background-image: linear-gradient(45deg, rgba(255,255,255,0.7), rgba(152,251,152,0.7)); margin: 20px 0; padding: 20px; border: 5px dashed red; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); transform: rotate(3deg);">
+            <div>
+              <span class="menu-item-name"
+                style="font-family: 'Papyrus'; font-size: 28px; color: red; text-shadow: 2px 2px white; display: block; margin-bottom: 10px;">
+                <blink>🥗 Ensalada César IMPERIAL ROMANA 🥗</blink>
+              </span>
+              <p class="menu-item-description"
+                style="font-family: 'Comic Sans MS'; color: darkgreen; font-size: 18px; text-shadow: 1px 1px white; background-color: rgba(255,255,255,0.5); padding: 10px; border-radius: 10px;">
+                Lechuga romana CULTIVADA EN TIERRAS VOLCÁNICAS, pollo grillado CRIADO SIN HORMONAS, crutones HECHOS A
+                MANO, parmesano AÑEJADO 36 MESES y aderezo César PREPARADO EN VIVO EN TU MESA.
+              </p>
+              <div style="text-align: center; margin-top: 15px;">
+                <span
+                  style="font-family: 'Comic Sans MS'; color: red; font-size: 20px; text-shadow: 1px 1px yellow; background-color: white; padding: 5px; border-radius: 5px; animation: blinker 1s linear infinite;">
+                  ¡EL FAVORITO DE JULIO CÉSAR!
+                </span>
+              </div>
+            </div>
+            <span class="menu-item-price"
+              style="font-family: 'Comic Sans MS'; font-size: 32px; color: white; text-shadow: 2px 2px red; background-color: green; padding: 15px; border-radius: 50%; border: 3px dotted gold; display: inline-block; width: 90px; height: 90px; line-height: 90px; text-align: center; transform: rotate(-15deg);">$850</span>
+          </div>
+
+          <div
+            style="text-align: center; margin: 30px 0; padding: 20px; background-color: rgba(255,0,0,0.7); border-radius: 20px; border: 8px double yellow;">
+            <img src="https://media.giphy.com/media/W69xBwRM9fhh30eyMw/giphy.gif" width="120" height="120"
+              style="border-radius: 50%; border: 3px solid white;">
+            <p
+              style="font-family: 'Comic Sans MS'; font-size: 26px; color: yellow; text-shadow: 2px 2px red; margin: 15px 0;">
+              <blink>¡MENÚ INFANTIL DISPONIBLE CON JUGUETE SORPRESA!</blink>
+            </p>
+            <span style="font-family: 'Papyrus'; font-size: 20px; color: white; display: block; margin: 10px 0;">
+              Pregunta a nuestros meseros por las opciones disponibles
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Reservas -->
+    <section class="section"
+      style="background-image: url('https://media.giphy.com/media/m7lmLV2UU32qQ/giphy.gif'); background-size: cover; padding: 40px 0;">
+      <div class="container"
+        style="background-color: rgba(255, 255, 0, 0.8); border: 15px ridge magenta; padding: 30px; border-radius: 20px; box-shadow: 0 0 50px lime;">
+        <h2 class="section-title"
+          style="font-family: 'Comic Sans MS'; color: red; text-shadow: 4px 4px blue; font-size: 42px; letter-spacing: 5px; transform: rotate(-3deg);">
+          <span class="shake">📞</span> ¿QUERÉS HACER UNA SUPER MEGA RESERVA VIP? <span class="shake">📅</span>
+        </h2>
+        <p
+          style="text-align: center; margin-bottom: 30px; font-family: 'Papyrus'; font-size: 24px; color: purple; text-shadow: 2px 2px lime; background-color: cyan; padding: 10px; border-radius: 15px; transform: rotate(2deg);">
+          <marquee scrollamount="5" direction="left">Reservá tu mesa PREMIUM en cualquiera de nuestras LUJOSAS
+            sucursales EXCLUSIVAS</marquee>
+        </p>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+          <img src="https://media.giphy.com/media/3o7TKGMZYVYdnLnL1K/giphy.gif" width="200" height="150"
+            style="border: 5px dashed white; border-radius: 20px;">
+        </div>
+
+        <form class="formulario"
+          style="max-width: 600px; margin: 0 auto; background-color: rgba(0, 0, 255, 0.6); padding: 30px; border: 8px dotted lime; border-radius: 20px;">
+          <div class="formulario-grupo" style="margin-bottom: 20px;">
+            <label for="nombre"
+              style="font-family: 'Comic Sans MS'; color: yellow; font-size: 20px; text-shadow: 2px 2px red; display: block; margin-bottom: 10px;">👤
+              TU NOMBRE SUPER COMPLETO</label>
+            <input type="text" id="nombre" name="nombre" required
+              style="width: 100%; padding: 15px; border: 5px solid magenta; border-radius: 10px; background-color: yellow; color: blue; font-size: 18px; font-family: 'Comic Sans MS';">
+          </div>
+
+          <div class="formulario-grupo" style="margin-bottom: 20px;">
+            <label for="telefono"
+              style="font-family: 'Comic Sans MS'; color: lime; font-size: 20px; text-shadow: 2px 2px purple; display: block; margin-bottom: 10px;">📱
+              TU TELÉFONO ULTRA SECRETO</label>
+            <input type="tel" id="telefono" name="telefono" required
+              style="width: 100%; padding: 15px; border: 5px solid orange; border-radius: 10px; background-color: pink; color: green; font-size: 18px; font-family: 'Comic Sans MS';">
+          </div>
+
+          <div class="formulario-grupo" style="margin-bottom: 20px;">
+            <label for="fecha"
+              style="font-family: 'Comic Sans MS'; color: cyan; font-size: 20px; text-shadow: 2px 2px red; display: block; margin-bottom: 10px;">📆
+              FECHA MEGA IMPORTANTE</label>
+            <input type="date" id="fecha" name="fecha" required
+              style="width: 100%; padding: 15px; border: 5px solid yellow; border-radius: 10px; background-color: purple; color: white; font-size: 18px; font-family: 'Comic Sans MS';">
+          </div>
+
+          <div class="formulario-grupo" style="margin-bottom: 20px;">
+            <label for="hora"
+              style="font-family: 'Comic Sans MS'; color: yellow; font-size: 20px; text-shadow: 2px 2px green; display: block; margin-bottom: 10px;">⏰
+              HORA SUPER EXACTA</label>
+            <input type="time" id="hora" name="hora" required
+              style="width: 100%; padding: 15px; border: 5px solid cyan; border-radius: 10px; background-color: red; color: white; font-size: 18px; font-family: 'Comic Sans MS';">
+          </div>
+
+          <div class="formulario-grupo" style="margin-bottom: 20px;">
+            <label for="personas"
+              style="font-family: 'Comic Sans MS'; color: white; font-size: 20px; text-shadow: 2px 2px blue; display: block; margin-bottom: 10px;">👨‍👩‍👧‍👦
+              CANTIDAD DE PERSONAS ULTRA VIP</label>
+            <select id="personas" name="personas"
+              style="width: 100%; padding: 15px; border: 5px solid green; border-radius: 10px; background-color: orange; color: white; font-size: 18px; font-family: 'Comic Sans MS';">
+              <option value="1">1 persona SOLITARIA</option>
+              <option value="2">2 personas ROMÁNTICAS</option>
+              <option value="3">3 personas DIVERTIDAS</option>
+              <option value="4">4 personas RUIDOSAS</option>
+              <option value="5">5 personas MUY HAMBRIENTAS</option>
+              <option value="6+">6+ personas ULTRA ESCANDALOSAS</option>
+            </select>
+          </div>
+
+          <div class="formulario-grupo" style="margin-bottom: 20px;">
+            <label for="comentarios"
+              style="font-family: 'Comic Sans MS'; color: pink; font-size: 20px; text-shadow: 2px 2px blue; display: block; margin-bottom: 10px;">💬
+              COMENTARIOS SUPER ESPECIALES</label>
+            <textarea id="comentarios" name="comentarios"
+              style="width: 100%; padding: 15px; border: 5px solid red; border-radius: 10px; background-color: cyan; color: purple; font-size: 18px; font-family: 'Comic Sans MS'; height: 100px;"></textarea>
+          </div>
+
+          <div style="text-align: center;">
+            <button type="submit"
+              style="background-color: red; color: yellow; font-size: 28px; padding: 15px 40px; border: 6px dashed cyan; border-radius: 15px; cursor: pointer; font-family: 'Comic Sans MS'; text-shadow: 2px 2px black; box-shadow: 0 0 20px white; animation: blinker 1s linear infinite; transform: rotate(-3deg);"
+              onclick="alert('¡TU RESERVA HA SIDO RECIBIDA! ¡TE ESPERAMOS CON MUCHO ENTUSIASMO!')">¡¡RESERVAR
+              AHORA!!</button>
+          </div>
+        </form>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <p
+            style="font-family: 'Papyrus'; font-size: 18px; color: blue; background-color: yellow; padding: 10px; border-radius: 10px; display: inline-block; transform: rotate(2deg);">
+            <blink>⭐ ¡RESERVANDO AHORA RECIBES UN POSTRE GRATIS! ⭐</blink>
+          </p>
+        </div>
+      </div>
+    </section> <!-- Footer -->
+    <footer
+      style="background-image: url('https://media.giphy.com/media/3o7TKMFTFZyPxlCbQY/giphy.gif'); background-size: cover; border-top: 10px dotted lime;">
+      <div class="container">
+        <h3
+          style="margin-bottom: 20px; font-family: 'Papyrus', fantasy; color: yellow; font-size: 36px; text-shadow: 3px 3px red, -3px -3px blue; transform: rotate(-3deg); text-align: center;">
+          <blink>☕☕☕ TIENDA DE CAFÉ - MENÚ ESTELAR ☕☕☕</blink>
+        </h3>
+
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="https://media.giphy.com/media/26BRtW4zppWWjrsPu/giphy.gif" width="200" height="150"
+            style="border: 5px ridge gold; border-radius: 15px;">
+        </div>
+
+        <marquee direction="right" scrollamount="10"
+          style="margin: 20px 0; color: lime; font-size: 24px; font-weight: bold; background-color: magenta; padding: 10px;">
+          ¡¡¡SÍGUENOS EN NUESTRAS REDES SOCIALES PARA MÁS CONTENIDO INCREÍBLE Y PROMOCIONES EXCLUSIVAS!!!
+        </marquee>
+
+        <div class="footer-links" style="display: flex; flex-wrap: wrap; justify-content: center; margin: 30px 0;">
+          <a href="index.html"
+            style="margin: 10px; padding: 10px 15px; background-color: red; color: yellow; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed cyan; font-size: 18px; border-radius: 15px; transform: rotate(-2deg); display: inline-block;">🏠
+            Inicio</a>
+          <a href="tienda.html"
+            style="margin: 10px; padding: 10px 15px; background-color: blue; color: white; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed yellow; font-size: 18px; border-radius: 15px; transform: rotate(2deg); display: inline-block;">☕
+            Nuestro Café</a>
+          <a href="tutoriales.html"
+            style="margin: 10px; padding: 10px 15px; background-color: green; color: yellow; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed white; font-size: 18px; border-radius: 15px; transform: rotate(-2deg); display: inline-block;">📚
+            Tutoriales</a>
+          <a href="menu.html"
+            style="margin: 10px; padding: 10px 15px; background-color: purple; color: lime; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed orange; font-size: 18px; border-radius: 15px; transform: scale(1.3); box-shadow: 0 0 20px yellow;">🍽️
+            Nuestro Menú</a>
+          <a href="trabaja-en-tdc.html"
+            style="margin: 10px; padding: 10px 15px; background-color: orange; color: blue; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed green; font-size: 18px; border-radius: 15px; transform: rotate(3deg); display: inline-block;">💼
+            Trabajá con Nosotros</a>
+          <a href="franquicias.html"
+            style="margin: 10px; padding: 10px 15px; background-color: cyan; color: red; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed magenta; font-size: 18px; border-radius: 15px; transform: rotate(-3deg); display: inline-block;">💰
+            Franquicias</a>
+          <a href="contacto.html"
+            style="margin: 10px; padding: 10px 15px; background-color: magenta; color: white; text-decoration: none; font-family: 'Comic Sans MS'; border: 3px dashed blue; font-size: 18px; border-radius: 15px; transform: rotate(2deg); display: inline-block;">📞
+            Contacto</a>
+        </div>
+
+        <div class="social-links" style="text-align: center; margin: 30px 0;">
+          <a href="#"
+            style="font-size: 48px; color: #3b5998; margin: 0 15px; text-shadow: 0 0 10px cyan; animation: shake 0.5s infinite;"><i
+              class="fab fa-facebook"></i></a>
+          <a href="#"
+            style="font-size: 48px; color: #c13584; margin: 0 15px; text-shadow: 0 0 10px yellow; animation: shake 0.5s infinite;"><i
+              class="fab fa-instagram"></i></a>
+          <a href="#"
+            style="font-size: 48px; color: #1da1f2; margin: 0 15px; text-shadow: 0 0 10px lime; animation: shake 0.5s infinite;"><i
+              class="fab fa-twitter"></i></a>
+          <a href="#"
+            style="font-size: 48px; color: #ff0000; margin: 0 15px; text-shadow: 0 0 10px white; animation: shake 0.5s infinite;"><i
+              class="fab fa-youtube"></i></a>
+          <a href="#"
+            style="font-size: 48px; color: #25D366; margin: 0 15px; text-shadow: 0 0 10px yellow; animation: shake 0.5s infinite;"><i
+              class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div
+          style="text-align: center; margin: 20px 0; background-color: rgba(0,0,0,0.5); padding: 15px; border-radius: 20px; border: 5px dashed white;">
+          <p style="font-family: 'Comic Sans MS'; font-size: 22px; color: yellow; margin-bottom: 10px;">
+            <blink>📍 NUESTRAS UBICACIONES SUPER EXCLUSIVAS 📍</blink>
+          </p>
+          <span style="font-family: 'Papyrus'; font-size: 18px; color: white; display: block; margin: 5px 0;">
+            🌟 Av. Principal 123, Capital Federal - Tel: 11-1234-5678
+          </span>
+          <span style="font-family: 'Papyrus'; font-size: 18px; color: white; display: block; margin: 5px 0;">
+            🌟 Calle Secundaria 456, Rosario - Tel: 341-8765-4321
+          </span>
+          <span style="font-family: 'Papyrus'; font-size: 18px; color: white; display: block; margin: 5px 0;">
+            🌟 Boulevard Central 789, Córdoba - Tel: 351-9876-5432
+          </span>
+        </div>
+
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="https://media.giphy.com/media/3o7bu8sRnYpTOG1p8k/giphy.gif" width="80" height="80"
+            style="margin: 0 10px;">
+          <img src="https://media.giphy.com/media/33FwOj0s31kgU6I9D7/giphy.gif" width="80" height="80"
+            style="margin: 0 10px;">
+          <img src="https://media.giphy.com/media/3o7bu8sRnYpTOG1p8k/giphy.gif" width="80" height="80"
+            style="margin: 0 10px;">
+        </div>
+
+        <p class="copyright"
+          style="color: lime; font-size: 18px; text-align: center; font-family: 'Comic Sans MS'; margin-top: 20px; background-color: rgba(128,0,128,0.7); padding: 10px; border: 2px dashed yellow;">
+          <blink>© Copyright 2025 Tienda de café - ¡¡¡TODOS LOS DERECHOS MEGA RESERVADOS!!! - ¡¡¡PÁGINA DISEÑADA CON
+            AMOR EXTREMO Y PASIÓN DESENFRENADA!!!</blink>
+        </p>
+
+        <div style="text-align: center; margin-top: 20px;">
+          <span
+            style="color: white; font-size: 12px; background-color: red; padding: 5px; font-family: 'Comic Sans MS';">
+            Contador de visitas: <span style="font-weight: bold;">3,764,129</span> ¡Gracias por visitarnos!
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Script para mostrar mensajes molestos
+      function mostrarMensajeAleatorio() {
+        const mensajes = [
+          '¡NO TE PIERDAS NUESTRAS OFERTAS ESPECIALES DE LOS MIÉRCOLES!',
+          '¡SÍGUENOS EN TODAS NUESTRAS REDES SOCIALES PARA MÁS CONTENIDO EXCLUSIVO!',
+          '¡PRUEBA NUESTRO NUEVO CAPPUCCINO DE CARAMELO CON EXTRA CREMA!',
+          '¡DESCARGA NUESTRA APP Y OBTÉN UN 10% DE DESCUENTO EN TU PRIMERA COMPRA!'
+        ];
+        const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+        alert(mensajeAleatorio);
+      }
+
+      // Mostrar mensaje después de 15 segundos
+      setTimeout(mostrarMensajeAleatorio, 15000);
+
+      // Mostrar mensaje al intentar salir de la página
+      window.addEventListener('beforeunload', function(e) {
+        e.preventDefault();
+        e.returnValue = '¿SEGURO QUE QUIERES IRTE SIN PROBAR NUESTRO MENÚ?';
+      });
+    </script>
+  </body>
+
+</html>

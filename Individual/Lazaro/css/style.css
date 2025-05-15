@@ -1,0 +1,552 @@
+/* Estilos TERRIBLES para Tienda de Café */
+* {
+  margin: 2px;
+  padding: 1px;
+  box-sizing: content-box;
+  font-family: "Comic Sans MS", "Papyrus", "Courier New", cursive;
+}
+
+body {
+  background-color: #ff00ff;
+  background-image: url("https://gifdb.com/images/high/brown-coffee-beans-rain-falling-animation-6ja2kjnpwmgjo66v.gif");
+  color: #00ff00;
+  line-height: 1.9;
+  cursor: url("https://cur.cursors-4u.net/food/foo-1/foo57.cur"), auto;
+}
+
+.container {
+  width: 98%;
+  max-width: none;
+  margin: 5px auto;
+  padding: 15px;
+  border: 7px dashed yellow;
+}
+
+/* Header y navegación */
+header {
+  background-color: #ff0000;
+  color: #00ffff;
+  padding: 15px 0;
+  border: 10px ridge blue;
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 5px 5px 0px #ff00ff, -5px -5px 0px #00ff00, 8px -8px 0px #ffff00;
+  transform: rotate(-5deg);
+  letter-spacing: 10px;
+}
+
+.logo a {
+  color: #ffff00;
+  text-decoration: none;
+}
+
+nav {
+  display: block;
+  background-color: #ff6600;
+  border-top: 4px dotted white;
+  border-bottom: 4px dotted white;
+}
+
+nav ul {
+  list-style: square;
+  display: block;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 5px;
+  display: inline-block;
+  transform: skew(-20deg);
+}
+
+nav ul li a {
+  color: #ffff00;
+  text-decoration: blink;
+  padding: 10px 15px;
+  display: block;
+  transition: all 0.5s;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: purple;
+  border-radius: 15px;
+}
+
+nav ul li a:hover {
+  background-color: lime;
+  color: red;
+  transform: scale(1.5) rotate(5deg);
+}
+
+/* Hero section */
+.hero {
+  background-image: url("../img/hero-bg.jpg"),
+    url("https://media.giphy.com/media/xmz54FAroBvm7HCUgT/giphy.gif");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  color: yellow;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  text-shadow: 4px 4px 0 #ff0000, -4px -4px 0 #0000ff;
+  border-top: 20px ridge cyan;
+  border-bottom: 20px ridge cyan;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 255, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  transform: rotate(-2deg);
+}
+
+.hero h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+  color: #ffff00;
+  animation: colorChange 1s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: yellow;
+  }
+  25% {
+    color: cyan;
+  }
+  50% {
+    color: magenta;
+  }
+  75% {
+    color: lime;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+.hero p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Papyrus", fantasy;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff00ff;
+  color: yellow;
+  padding: 20px 40px;
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 24px;
+  border: 3px solid lime;
+  transform: rotate(3deg);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: #ff00ff;
+  transform: rotate(-3deg) scale(1.2);
+}
+
+/* Secciones */
+.section {
+  padding: 60px 0;
+  background-color: rgba(255, 0, 255, 0.3);
+}
+
+.section:nth-child(odd) {
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: yellow;
+  text-shadow: 3px 3px 0 red;
+  transform: rotate(-1deg) skewX(-5deg);
+  letter-spacing: 5px;
+}
+
+/* Productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.producto {
+  background-color: #00ffff;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: 15px 15px 0 #ff00ff, -15px -15px 0 #ffff00;
+  transition: all 0.5s;
+  border: 5px solid red;
+}
+
+.producto:hover {
+  transform: rotate(10deg) scale(1.1);
+  z-index: 10;
+}
+
+.producto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: hue-rotate(180deg) contrast(150%);
+}
+
+.producto:hover .producto-img {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  10% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  20% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  30% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  40% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  60% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  70% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  80% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  90% {
+    transform: translate(-5px, -5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+
+.producto-info {
+  padding: 20px;
+  background-color: yellow;
+}
+
+.producto-titulo {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ff0000;
+  text-shadow: 2px 2px blue;
+}
+
+.producto-descripcion {
+  margin-bottom: 15px;
+  color: #9900cc;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.producto-precio {
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  text-decoration: underline wavy blue;
+  transform: rotate(-5deg);
+  display: inline-block;
+}
+
+/* Características */
+.caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.caracteristica {
+  text-align: center;
+  padding: 20px;
+  background-color: cyan;
+  border: 4px dashed magenta;
+  transform: rotate(2deg);
+}
+
+.caracteristica:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+
+.caracteristica-icon {
+  font-size: 60px;
+  color: #ff0000;
+  margin-bottom: 15px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.caracteristica-titulo {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0000ff;
+  text-decoration: underline dotted;
+}
+
+/* Formulario */
+.formulario {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #ffff00;
+  padding: 30px;
+  border-radius: 0;
+  box-shadow: 20px 20px 0 #ff00ff, -20px -20px 0 #00ffff;
+  transform: rotate(1deg);
+}
+
+.formulario-grupo {
+  margin-bottom: 20px;
+  border: 3px solid #ff0000;
+  padding: 10px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ff0000;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+  width: 100%;
+  padding: 15px;
+  border: 5px dotted #ff00ff;
+  border-radius: 20px;
+  background-color: cyan;
+  color: purple;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+  background-color: lime;
+  outline: 10px solid red;
+}
+
+.formulario textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/dancing-skeletons.png");
+  color: #ff00ff;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 15px groove #00ffff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #ffff00;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ff0000;
+  padding: 10px;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+  background-color: #00ff00;
+  color: #ff00ff;
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: #00ffff;
+  font-size: 40px;
+  margin: 0 20px;
+  display: inline-block;
+  background-color: #ff00ff;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  border: 5px double yellow;
+}
+
+.copyright {
+  font-size: 18px;
+  color: #ff0000;
+  font-weight: bold;
+  text-shadow: 2px 2px #00ff00;
+  letter-spacing: 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+/* Estilos específicos para la página de tutoriales */
+.tutorial {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-content {
+  padding: 20px;
+}
+
+.tutorial h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #553c2b;
+}
+
+/* Estilos para la página de menú */
+.menu-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 15px;
+}
+
+.menu-item-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #553c2b;
+}
+
+.menu-item-price {
+  font-weight: bold;
+  color: #c8a27e;
+}
+
+.menu-item-description {
+  margin-top: 5px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Chispas y elementos decorativos aleatorios */
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 150px;
+  height: 150px;
+  background-image: url("https://media.tenor.com/mgOpR-psjOoAAAAi/coffee-coffee-cup.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 9999;
+}
+
+/* Decoraciones aleatorias extra */
+::selection {
+  background-color: #ff00ff;
+  color: yellow;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ff00ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, yellow, cyan, magenta, lime);
+  border-radius: 10px;
+  border: 3px dotted #000000;
+}
